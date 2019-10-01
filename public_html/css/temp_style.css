@@ -1,0 +1,18 @@
+body{
+    width: 100%
+}
+header{
+
+}
+aside{
+    background-color: darkslategray;
+}
+.container{
+    padding:.5em;
+}
+.wrapper{
+    margin-left: 1em;
+}
+#icon{
+    width: 25%;
+}
