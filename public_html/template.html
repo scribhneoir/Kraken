@@ -12,18 +12,21 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
         
+        <!-- Fonts CSS -->
+        <link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Questrial|Vibes&display=swap" rel="stylesheet"> 
+
         <!-- Template CSS -->
         <link rel="stylesheet" href="css/temp_style.css">
-        
+
     </head>
     <body>
-        <header>
+        <header class="shadow">
             <div class="container">
                 <div class="row">
-                    <div class="col" id="logoImg">
+                    <div class="col-2" id="logoImg">
                         <img id="icon" src="img/icon.png" alt="icon">
                     </div>
-                    <div class="col" id="logo">
+                    <div class="col-5" id="logo">
                         <div class="row">
                             <div class="col">
                                 <h1>KRAKEN</h1>
@@ -31,11 +34,11 @@
                         </div>
                         <div class="row">
                                 <div class="col">
-                                    <h2>social music library</h2>
+                                    <h2 id="subtitle">social music library</h2>
                                 </div>
                             </div>
                     </div>
-                    <div class="col" id="search">
+                    <div class="col-4" id="search">
                         <form class="form-inline">
                         <i class="fas fa-search" aria-hidden="true"></i>
                             <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
@@ -49,13 +52,21 @@
         <main class="wrapper">
             <div class="row">
 
-                <aside id="sidebar">
+                <nav class="col-3" id="sidebar">
                     <div class="container">
                         <div class="row">
                             <div class="col">
                                 <div class="sidebar-header">
-                                    <h3>Bootstrap Sidebar</h3>
+                                    <h2>Social Feed</h2>
                                 </div>
+                                <div class="feed-item">
+                                    
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <button type="button" id="sidebarCollapse" class="btn shadow">
+                                    <i class="fas fa-arrow-alt-circle-right"></i>
+                                </button>
                             </div>
                         </div>
                         <div class="row">
@@ -64,13 +75,14 @@
                             </div>
                         </div>
                     </div>
-                </aside>
+                </nav>
 
                 <div class = "col" id="content">
                     <div class="container">
                         <div class="row">
                             <div class="col">
-                                    <h3>Content</h3>
+                                    <h2>Content</h2>
+                                    <p>Blah blah blah</p>
                             </div>
                         </div>
                     </div>

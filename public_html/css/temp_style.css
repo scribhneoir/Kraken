@@ -1,11 +1,27 @@
 body{
-    width: 100%
+    width: 100%;
+    background-color: #283149;
 }
 header{
-
+    background-color: #404b69;
 }
-aside{
-    background-color: darkslategray;
+#sidebar{
+    background-color: #404b69;
+}
+h1{
+    color: #f73859;
+    font-family: 'Permanent Marker', cursive;
+}
+h2, p{
+    color: #dbedf3;
+    font-family: 'Questrial', sans-serif;
+}
+#sidebarCollapse{
+    background-color: #f73859;
+    color: #dbedf3;
+}
+#subtitle{
+    font-family: 'Vibes', cursive;
 }
 .container{
     padding:.5em;
@@ -14,5 +30,9 @@ aside{
     margin-left: 1em;
 }
 #icon{
-    width: 25%;
+    width: 6em;
+}
+#logo{
+    padding: 0;
+    margin: 0;
 }
