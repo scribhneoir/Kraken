@@ -59,8 +59,10 @@ h3{
     padding: 0;
     margin: 0;
 }
-.feed-item{
+.card{
     background-color: rgba(64,75,105,.9); 
+}
+.feed-item{
     margin-top: .5em;
 }
 .feed-icon{
