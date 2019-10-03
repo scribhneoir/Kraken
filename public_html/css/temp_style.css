@@ -67,4 +67,7 @@ h3{
 #search{
     margin-top: 2em;
 }
-
+#profile_image {
+    width: 100px;
+    padding-bottom: 10px;
+}
