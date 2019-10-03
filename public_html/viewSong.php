@@ -106,26 +106,26 @@
                         <div class="col">
                             <img src="img\Imagine Dragons Cover Art.jpg" style="width:100%">
                             <div class="card">
-                                <div class="card-body bg-light">
+                                <div class="card-body">
+                                    <h3 style="text-align:center">Thunder</h3>
                                     <ul>
-                                        <li>Song Title: Thunder</li>
                                         <li>Song Length: 3:08</li>
                                         <li>Artist: Imagine Dragons</li>
                                         <li>Album: Evolve</li>
                                         <li>Genre: Synth-Pop</li>
                                         <li>Description: Upbeat song, the bass really slaps.</li>
                                         <li>Added By: LazyTiger22</li>
-                                        <li>Reviews: 4.3 out of 5</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="form col">
-                            <label for="songReview" class="col-form-label bg-light">Write a Review</label>
+                            <label for="songReview" class="col-form-label ">Write a Review!</label>
                             <textarea id="songReview" name="songReview" cols="40" rows="5" class="form-control"></textarea>
-                            <label for="otherSongReview" class="col-form-label bg-light" style="margin-top:10px">Other Users Wrote:</label>
-                            <div class="card">
-                                <div class="card-body bg-light">
+                            <button name="submit" type="submit" class="btn">Submit Your Review</button>
+                            <div class="card" style="margin-top:10px;">
+                                <div class="card-body">
+                                    <h3 style="text-align:center">Other Users Wrote:</h3>
                                     <p>Madrake35: I love this song so Much!</p>
                                     <p>Puppy_Eyes314: This song is kinda ok.</p>
                                 </div>
