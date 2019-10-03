@@ -4,30 +4,53 @@ body{
 }
 header{
     background-color: #404b69;
+    background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 #sidebar{
-    background-color: #404b69;
+    background-color: rgba(64,75,105,.75);
+    background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 h1{
     color: #f73859;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+    margin-top: .25em;
 }
-h2, p{
+h2, h3, p{
     color: #dbedf3;
     font-family: 'Questrial', sans-serif;
+}
+h3{
+    font-size: 1.2em;
+}
+.feed-icon{
+    width: 3em;
 }
 #sidebarCollapse{
     background-color: #f73859;
     color: #dbedf3;
 }
 #subtitle{
-    font-family: 'Vibes', cursive;
+    margin-top: -.5em;
+    font-size: 1em;
+    font-family: 'Lexend Exa', sans-serif;
 }
 .container{
     padding:.5em;
 }
 .wrapper{
     margin-left: 1em;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+#sidebar.active {
+    margin-left: -230px;
 }
 #icon{
     width: 6em;
@@ -36,3 +59,14 @@ h2, p{
     padding: 0;
     margin: 0;
 }
+.feed-item{
+    background-color: rgba(64,75,105,.9); 
+    margin-top: .5em;
+}
+.feed-icon{
+    padding-right: .5em;
+}
+#search{
+    margin-top: 2em;
+}
+
