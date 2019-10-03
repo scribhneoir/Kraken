@@ -7,11 +7,6 @@ header{
     background-image: url("https://www.transparenttextures.com/patterns/shattered.png");
     /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
-#sidebar{
-    background-color: rgba(64,75,105,.75);
-    background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-}
 h1{
     color: #f73859;
     font-family: 'Righteous', cursive;
@@ -26,38 +21,11 @@ h2, h3, p{
 h3{
     font-size: 1.2em;
 }
-.feed-icon{
-    width: 3em;
-}
-#sidebarCollapse{
-    background-color: #f73859;
-    color: #dbedf3;
-}
-#subtitle{
-    margin-top: -.5em;
-    font-size: 1em;
-    font-family: 'Lexend Exa', sans-serif;
-}
 .container{
     padding:.5em;
 }
 .wrapper{
     margin-left: 1em;
-}
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    min-height: 100vh;
-}
-#sidebar.active {
-    margin-left: -230px;
-}
-#icon{
-    width: 6em;
-}
-#logo{
-    padding: 0;
-    margin: 0;
 }
 .card{
     background-color: rgba(64,75,105,.9); 
@@ -67,6 +35,34 @@ h3{
 }
 .feed-icon{
     padding-right: .5em;
+    width: 3em;
+}
+#subtitle{
+    margin-top: -.5em;
+    font-size: 1em;
+    font-family: 'Lexend Exa', sans-serif;
+}
+#sidebar {
+    background-color: rgba(64,75,105,.75);
+    background-image: url("https://www.transparenttextures.com/patterns/skulls.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 100vh;
+}
+#sidebar.active {
+    margin-left: -230px;
+}
+#sidebarCollapse{
+    background-color: #f73859;
+    color: #dbedf3;
+}
+#icon{
+    width: 6em;
+}
+#logo{
+    padding: 0;
+    margin: 0;
 }
 #search{
     margin-top: 2em;
