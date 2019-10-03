@@ -78,7 +78,10 @@ h3{
 padding-top:1em;
 }
 #profile_image_upload{
-    margin-left:3px;
+    margin-left:5px;
+    padding-left:0px;
+    margin-right:0px;
+    padding-right:0px;
     margin-top:4.5em;
 }
 label{
