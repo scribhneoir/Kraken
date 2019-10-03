@@ -71,3 +71,16 @@ h3{
     width: 100px;
     padding-bottom: 10px;
 }
+label{
+    color: #dbedf3;
+    font-family: 'Questrial', sans-serif;
+}
+li{
+    color: #dbedf3;
+    font-family: 'Questrial', sans-serif;
+}
+button{
+    background-color: #f73859;
+    color: #dbedf3;
+    font-family: 'Questrial', sans-serif;
+}
