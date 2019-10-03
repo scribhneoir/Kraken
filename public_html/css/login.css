@@ -1,0 +1,13 @@
+main{
+    background-image: url("../img/squid.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:.5em;
+    height: 100%;
+}
+#login{
+    margin-top:10em;
+    margin-bottom: 25em;
+    padding: 1em;
+    padding-right: 2em;
+}
