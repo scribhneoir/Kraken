@@ -19,7 +19,7 @@
   <component name="ProjectId" id="1RflAMwd1JzdbJnuxjbvh3ct9qN" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public_html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -39,6 +39,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="profile.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Kraken/public_html/profile.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.profile.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -52,7 +62,9 @@
       <workItem from="1570065888127" duration="3411000" />
       <workItem from="1570070277693" duration="316000" />
       <workItem from="1570071146413" duration="1787000" />
-      <workItem from="1570074547498" duration="6297000" />
+      <workItem from="1570074547498" duration="6362000" />
+      <workItem from="1570566101047" duration="36000" />
+      <workItem from="1571794230772" duration="2963000" />
     </task>
     <servers />
   </component>

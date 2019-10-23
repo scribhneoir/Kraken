@@ -37,6 +37,9 @@ h3{
     padding-right: .5em;
     width: 3em;
 }
+.dropdown-item:focus{
+    background-color: white;
+}
 #subtitle{
     margin-top: -.5em;
     font-size: 1em;
@@ -96,6 +99,10 @@ li{
     background-color: #f73859;
     color: #dbedf3;
     font-family: 'Questrial', sans-serif;
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
 }
 .btn:hover{
     color: black;
