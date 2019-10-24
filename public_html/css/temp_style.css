@@ -77,6 +77,7 @@ h3{
     width: 100px;
     padding-bottom: 10px;
 }
+<<<<<<< Updated upstream
 #pro_form{
     margin-left:2em;
 }
@@ -90,6 +91,8 @@ padding-top:1em;
     padding-right:0px;
     margin-top:4.5em;
 }
+=======
+>>>>>>> Stashed changes
 label{
     color: #dbedf3;
     font-family: 'Questrial', sans-serif;
@@ -98,15 +101,25 @@ li{
     color: #dbedf3;
     font-family: 'Questrial', sans-serif;
 }
+<<<<<<< Updated upstream
 .btn{
+=======
+button{
+>>>>>>> Stashed changes
     background-color: #f73859;
     color: #dbedf3;
     font-family: 'Questrial', sans-serif;
 }
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+=======
 .btn:focus {
     outline: none;
     box-shadow: none;
 }
+>>>>>>> master
 .btn:hover{
     color: black;
 }
+=======
+>>>>>>> Stashed changes
