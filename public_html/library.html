@@ -219,22 +219,27 @@
         });
     </script>
     <script type="text/javascript">
-        var coll = document.getElementsByClassName("btn collapsible");
+        var coll = document.getElementsByClassName("collapsible");
         var playlistArr = document.getElementsByClassName("playlist");
         var i;
         var j;
+        var k;
 
         for (i = 0; i < coll.length; i++) {
         coll[i].addEventListener("click", function() {
             //this.classList.toggle("active");
-            for(j = 0; j < playlistArr.length; j++){
-               // window.alert(i + " " + j);
-                var content = playlistArr[j];
-                if (content.style.display === "block") {
-                    content.style.display = "none";
-                } 
-                else if(i - 1 == j) {
-                    content.style.display = "block";
+            for(k = 0; k < coll.length; k ++){
+                if(coll[k] === this){
+                    for(j = 0; j < playlistArr.length; j++){
+                    //window.alert(i + " " + j);
+                        var content = playlistArr[j];
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } 
+                        else if(k == j) {
+                            content.style.display = "block";
+                        }
+                    }
                 }
             }
         });
