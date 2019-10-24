@@ -19,7 +19,7 @@
   <component name="ProjectId" id="1RflAMwd1JzdbJnuxjbvh3ct9qN" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public_html" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -39,12 +39,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.register.html">
     <configuration name="profile.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Kraken/public_html/profile.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="register.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Kraken/public_html/register.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="reset_password.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Kraken/public_html/reset_password.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.register.html" />
+        <item itemvalue="JavaScript Debug.reset_password.html" />
         <item itemvalue="JavaScript Debug.profile.html" />
       </list>
     </recent_temporary>
@@ -64,7 +72,9 @@
       <workItem from="1570071146413" duration="1787000" />
       <workItem from="1570074547498" duration="6362000" />
       <workItem from="1570566101047" duration="36000" />
-      <workItem from="1571794230772" duration="2963000" />
+      <workItem from="1571794230772" duration="3596000" />
+      <workItem from="1571863577527" duration="5000" />
+      <workItem from="1571875377744" duration="1338000" />
     </task>
     <servers />
   </component>
