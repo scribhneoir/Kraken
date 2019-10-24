@@ -1,0 +1,25 @@
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+    color: #444;
+    width: 100%;
+    padding: 10em;
+    border: none;
+    outline: none;
+    background: url(../img/Imagine\ Dragons\ Cover\ Art.jpg);
+    background-size: cover;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .playlist {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+  } 
+  .playlistImg{
+      width: 20em;
+  }

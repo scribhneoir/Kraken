@@ -43,6 +43,28 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JavaScript Debug.viewSong.php">
+    <configuration name="profile.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Kraken/public_html/profile.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="register.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Kraken/public_html/register.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="reset_password.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Kraken/public_html/reset_password.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="viewSong.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Kraken/public_html/viewSong.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.viewSong.php" />
+        <item itemvalue="JavaScript Debug.register.html" />
+        <item itemvalue="JavaScript Debug.reset_password.html" />
+        <item itemvalue="JavaScript Debug.profile.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -57,10 +79,18 @@
       <workItem from="1570070277693" duration="316000" />
 <<<<<<< Updated upstream
       <workItem from="1570071146413" duration="1787000" />
+<<<<<<< HEAD
       <workItem from="1570074547498" duration="6020000" />
 =======
       <workItem from="1570071146413" duration="2834000" />
 >>>>>>> Stashed changes
+=======
+      <workItem from="1570074547498" duration="6362000" />
+      <workItem from="1570566101047" duration="36000" />
+      <workItem from="1571794230772" duration="3596000" />
+      <workItem from="1571863577527" duration="5000" />
+      <workItem from="1571875377744" duration="2505000" />
+>>>>>>> master
     </task>
     <servers />
   </component>
