@@ -113,75 +113,289 @@
                         <div class="col">
                             <h1>Library</h1>
                             <div class="container">
-                                <div class="row">
+                                <div class="row" style="margin-bottom: 2em;">
                                     <div class="col">
-                                        <button style="background: url(\img\Imagine Dragons Cover Art.jpg)" type="button" class="btn collapsible"></button>
+                                        <button style="background-image: url(img/Imagine\ Dragons\ Cover\ Art.jpg), 
+                                            url(img/abbaGold.png), 
+                                            url(img/theClick.jpg),
+                                            url(img/deathOfABatchelor.jpg);" type="button" class="btn collapsible">
+                                        </button>
+                                        <p>Cool Jams</p>
                                     </div>
                                     <div class="col">
-                                        <button style="background: url(\img\Imagine Dragons Cover Art.jpg)" type="button" class="btn collapsible"></button>
+                                        <button style="background-image: url(img/neotheater.jpg), 
+                                            url(img/PrayfortheWicked.jpg), 
+                                            url(img/1.jpg),
+                                            url(img/queenGreatest.jpg);" type="button" class="btn collapsible">
+                                        </button>
+                                        <p>Groovy Tunes</p>
                                     </div>
                                     <div class="col">
-                                        <button style="background: url(\img\Imagine Dragons Cover Art.jpg)" type="button" class="btn collapsible"></button>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="playlist" id="p1">
-                                            <p>Blah Blah 1</p>
-                                        </div>
-                                        <div class="playlist" id="p2">
-                                            <p>Blah Blah 2</p>
-                                        </div>
-                                        <div class="playlist" id="p3">
-                                            <p>Blah Blah 3</p>  
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col">
-                                        
+                                        <button style="background-image: url(img/BillyJoel.jpg), 
+                                            url(img/NothingisSound.jpg), 
+                                            url(img/Imagine\ Dragons\ Cover\ Art.jpg),
+                                            url(img/theClick.jpg);" type="button" class="btn collapsible">
+                                        </button>
+                                        <p>Sweet Songs</p>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <div class="playlist" id="p5">
-
+                                        <div class="playlist">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <h2>Cool Jams</h2>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" id="edit" class="btn shadow">
+                                                        <i class="fas fa-pen-square"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">Title</th>
+                                                                <th scope="col">Album</th>
+                                                                <th scope="col">Artist</th>
+                                                                <th scope="col">Runtime</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="song" id="BudLikeYou">
+                                                                <th scope="row">1</th>
+                                                                <td>Bud Like You</td>
+                                                                <td>The Click</td>
+                                                                <td>AJR</td>
+                                                                <td>3:51</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="song" id="DancingQueen">
+                                                                <th scope="row">2</th>
+                                                                <td>Dancing Queen</td>
+                                                                <td>ABBA Gold</td>
+                                                                <td>ABBA</td>
+                                                                <td>3:53</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="song" id="Crazy=Genius">
+                                                                <th scope="row">3</th>
+                                                                <td>Crazy=Genius</td>
+                                                                <td>Death of a Bachelor</td>
+                                                                <td>Panic! At The Disco</td>
+                                                                <td>3:18</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="song" id="Radioactive">
+                                                                <th scope="row">4</th>
+                                                                <td>Radioactive</td>
+                                                                <td>Night Visions</td>
+                                                                <td>Imagine Dragons</td>
+                                                                <td>3:06</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="playlist" id="p6">
-                                            
+                                        <div class="playlist">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <h2>Groovy Tunes</h2>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" id="edit" class="btn shadow">
+                                                        <i class="fas fa-pen-square"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">Title</th>
+                                                                <th scope="col">Album</th>
+                                                                <th scope="col">Artist</th>
+                                                                <th scope="col">Runtime</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="song" id="PennyLane">
+                                                                <th scope="row">1</th>
+                                                                <td>Penny Lane</td>
+                                                                <td>1</td>
+                                                                <td>The Beatles</td>
+                                                                <td>3:00</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="song" id="TheOverpass">
+                                                                <th scope="row">2</th>
+                                                                <td>The Overpass</td>
+                                                                <td>Pray For The Wicked</td>
+                                                                <td>Panic! At The Disco</td>
+                                                                <td>2:58</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="song" id="DontStopMeNow">
+                                                                <th scope="row">3</th>
+                                                                <td>Don't Stop Me Now</td>
+                                                                <td>Queen Greatest Hits</td>
+                                                                <td>Queen</td>
+                                                                <td>3:31</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="song" id="Roaring20s">
+                                                                <th scope="row">4</th>
+                                                                <td>Roaring 20's</td>
+                                                                <td>Pray For The Wicked</td>
+                                                                <td>Panic! At The Disco</td>
+                                                                <td>3:07</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="song" id="BirthdayParty">
+                                                                <th scope="row">5</th>
+                                                                <td>Birthday Party</td>
+                                                                <td>Neotheater</td>
+                                                                <td>AJR</td>
+                                                                <td>3:44</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="song" id="DearWinter">
+                                                                <th scope="row">6</th>
+                                                                <td>Dear Winter</td>
+                                                                <td>Neotheater</td>
+                                                                <td>AJR</td>
+                                                                <td>2:48</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="playlist" id="p7">
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col">
-
-                                    </div>
-                                    <div class="col">
-                                        
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <div class="playlist" id="p8">
-
-                                        </div>
-                                        <div class="playlist" id="p9">
-                                            
-                                        </div>
-                                        <div class="playlist" id="p10">
-                                            
+                                        <div class="playlist">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <h2>Sweet Songs</h2>
+                                                </div>
+                                                <div class="col">
+                                                    <button type="button" id="edit" class="btn shadow">
+                                                        <i class="fas fa-pen-square"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <table class="table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">Title</th>
+                                                                <th scope="col">Album</th>
+                                                                <th scope="col">Artist</th>
+                                                                <th scope="col">Runtime</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="song" id="PianoMan">
+                                                                <th scope="row">1</th>
+                                                                <td>Piano Man</td>
+                                                                <td>Greatest Hits</td>
+                                                                <td>Billy Joel</td>
+                                                                <td>5:37</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="song" id="Stars">
+                                                                <th scope="row">2</th>
+                                                                <td>Stars</td>
+                                                                <td>Nothing is Sound</td>
+                                                                <td>Switchfoot</td>
+                                                                <td>4:20</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="song" id="SoberUp">
+                                                                <th scope="row">3</th>
+                                                                <td>Sober Up</td>
+                                                                <td>The Click</td>
+                                                                <td>AJR</td>
+                                                                <td>3:39</td>
+                                                                <td class="delete">
+                                                                    <button type="button" id="deleteSong"
+                                                                        class="btn shadow">
+                                                                        <i class="fas fa-trash-alt"></i>
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -210,15 +424,28 @@
         crossorigin="anonymous"></script>
 
     <script type="text/javascript">
+
         $(document).ready(function () {
+            //sidebar
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('active');
                 $('#sbToggle').toggleClass('fa-arrow-alt-circle-right');
                 $('#sbToggle').toggleClass('fa-arrow-alt-circle-left');
             });
+
+            //edit playlist (toggle delete)
+            $("#edit").click(function () {
+                $('.delete').toggleClass('active');
+            });
+
+            //go to song
+            $(".song").click(function () {
+                alert($(this).attr("id"));
+                window.location = "viewSong.php";
+            });
         });
-    </script>
-    <script type="text/javascript">
+
+        //library expansion
         var coll = document.getElementsByClassName("collapsible");
         var playlistArr = document.getElementsByClassName("playlist");
         var i;
@@ -226,24 +453,23 @@
         var k;
 
         for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            //this.classList.toggle("active");
-            for(k = 0; k < coll.length; k ++){
-                if(coll[k] === this){
-                    for(j = 0; j < playlistArr.length; j++){
-                    //window.alert(i + " " + j);
-                        var content = playlistArr[j];
-                        if (content.style.display === "block") {
-                            content.style.display = "none";
-                        } 
-                        else if(k == j) {
-                            content.style.display = "block";
+            coll[i].addEventListener("click", function () {
+                for (k = 0; k < coll.length; k++) {
+                    if (coll[k] === this) {
+                        for (j = 0; j < playlistArr.length; j++) {
+                            var content = playlistArr[j];
+                            if (content.style.maxHeight) {
+                                content.style.maxHeight = null;
+                            }
+                            else if (k == j) {
+                                content.style.maxHeight = content.scrollHeight + "px";
+                            }
                         }
                     }
                 }
-            }
-        });
-        } 
+            });
+        }
+
     </script>
 </body>
 
