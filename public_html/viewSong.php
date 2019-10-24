@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Template</title>
+        <title>View Song</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="utf-8">
         <!-- Bootstrap CSS CDN -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         
         <!-- FontAwesome CSS & JS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -13,7 +13,7 @@
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
         
         <!-- Fonts CSS -->
-        <link href="https://fonts.googleapis.com/css?family=Lexend+Exa|Questrial|Righteous&display=swap" rel="stylesheet">         
+        <link href="https://fonts.googleapis.com/css?family=Lexend+Exa|Questrial|Righteous&display=swap" rel="stylesheet">
         
         <!-- Template CSS -->
         <link rel="stylesheet" href="css/temp_style.css">
@@ -129,12 +129,14 @@
                                         <li>Genre: Synth-Pop</li>
                                         <li>Description: Upbeat song, the bass really slaps.</li>
                                         <li>Added By: LazyTiger22</li>
+                                        <li>Average Start Rating: 3.9</li>
+                                        <a name="submit" href="viewAlbum.php" type="submit" class="btn" style="margin-top:10px;">Go To Album</a>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="form col">
-                            <label for="songReview" class="col-form-label ">Write a Review!</label>
+                            <label for="songReview" class="col-form-label " style="color: #dbedf3;">Write a Review!</label>
                             <textarea id="songReview" name="songReview" cols="40" rows="5" class="form-control"></textarea>
                             <button name="submit" type="submit" class="btn">Submit Your Review</button>
                             <div class="card" style="margin-top:10px;">
@@ -143,6 +145,28 @@
                                     <p>Madrake35: I love this song so Much!</p>
                                     <p>Puppy_Eyes314: This song is kinda ok.</p>
                                 </div>
+                            </div>
+                            <h3 style="margin-top: 10px;">How many stars do you give this song?</h3>
+                            <div class="rate">
+                                <input type="radio" id="star1" name="rate" value="1" />
+                                <label for="star1" title="text"style="color: #dbedf3;">1 star</label>
+                                <input type="radio" id="star2" name="rate" value="2" />
+                                <label for="star2" title="text"style="color: #dbedf3;">2 stars</label>
+                                <input type="radio" id="star3" name="rate" value="3" />
+                                <label for="star3" title="text"style="color: #dbedf3;">3 stars</label>
+                                <input type="radio" id="star4" name="rate" value="4" />
+                                <label for="star4" title="text"style="color: #dbedf3;">4 stars</label>
+                                <input type="radio" id="star5" name="rate" value="5" />
+                                <label for="star5" title="text"style="color: #dbedf3;">5 stars</label>
+                            </div>
+                            <div class = "dropdown col-1"style="margin-top:20px;">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Add To Playlist
+                                    <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><input type="checkbox" checked data-size="mini"> Workout</li>
+                                    <li class="dropdown-item"><input type="checkbox" checked data-size="mini"> Car Jams</li>
+                                    <li class="dropdown-item"><input type="checkbox" checked data-size="mini"> Old School</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
