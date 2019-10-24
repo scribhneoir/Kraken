@@ -22,6 +22,7 @@
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="css/temp_style.css">
+    <link rel="stylesheet" href="css/library_style.css">
 
 </head>
 
@@ -45,15 +46,6 @@
                         <i class="fas fa-search" aria-hidden="true"></i>
                         <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
                             aria-label="Search">
-                        <div class = "dropdown col-1">
-                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">config
-                                <span class="caret"></span></button>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-item"><input type="checkbox" checked data-size="mini"> Artists</li>
-                                <li class="dropdown-item"><input type="checkbox" checked data-size="mini"> Albums</li>
-                                <li class="dropdown-item"><input type="checkbox" checked data-size="mini"> Songs</li>
-                            </ul>
-                        </div>
                     </form>
                 </div>
             </div>
@@ -63,13 +55,15 @@
     <main class="wrapper">
         <div class="row">
 
-            <nav class="col-3" id="sidebar">
+            <nav class="col" id="sidebar">
                 <div class="container">
                     <div class="row">
                         <div class="col">
+
                             <div class="sidebar-header">
                                 <h2>Social Feed</h2>
                             </div>
+
                             <div class="card shadow feed-item">
                                 <div class="container">
                                     <div class="row">
@@ -117,73 +111,81 @@
                 <div class="container">
                     <div class="row">
                         <div class="col">
-                            <div id="pro_form" class="row">
-                                <div class="col">
-                                    <h1 class="profile_title">Profile</h1>
-                                    <img id="profile_image" src="img/profile.jpg" alt="profile_image">
-                                    <div class="row">
-                                        <label class="col col-form-label font-weight-bold">User ID</label>
-                                        <div class="col">
-                                            <p class="font-weight-bold profile_border">JohnSmith</p>
-                                        </div>
+                            <h1>Library</h1>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <button style="background: url(\img\Imagine Dragons Cover Art.jpg)" type="button" class="btn collapsible"></button>
                                     </div>
-                                    <div class="row">
-                                        <label class="col col-form-label font-weight-bold">First Name</label>
-                                        <div class="col">
-                                            <p class="font-weight-bold profile_border">John</p>
-                                        </div>
+                                    <div class="col">
+                                        <button style="background: url(\img\Imagine Dragons Cover Art.jpg)" type="button" class="btn collapsible"></button>
                                     </div>
-                                    <div class="row">
-                                        <label class="col col-form-label font-weight-bold">Last Name</label>
-                                        <div class="col">
-                                            <p class="font-weight-bold profile_border">Smith</p>
-                                        </div>
+                                    <div class="col">
+                                        <button style="background: url(\img\Imagine Dragons Cover Art.jpg)" type="button" class="btn collapsible"></button>
                                     </div>
-                                    <div class="row">
-                                        <label class="col col-form-label font-weight-bold">Country</label>
-                                        <div class="col">
-                                            <p class="font-weight-bold profile_border">U.S.</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="playlist" id="p1">
+                                            <p>Blah Blah 1</p>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <label class="col col-form-label font-weight-bold">State</label>
-                                        <div class="col">
-                                            <p class="font-weight-bold profile_border">PA</p>
+                                        <div class="playlist" id="p2">
+                                            <p>Blah Blah 2</p>
                                         </div>
-                                    </div>
-                                    <div class="row">
-                                        <label class="col col-form-label font-weight-bold">Age</label>
-                                        <div class="col">
-                                            <p class="font-weight-bold profile_border">20</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <label class="col col-form-label font-weight-bold">Gender</label>
-                                        <div class="col">
-                                            <p class="font-weight-bold profile_border">Male</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-8">
-                                            <a class="btn" href="profile_edit.html" role="button">Edit
-                                                Profile</a>
-                                            <a class="btn" href="change_password.html" role="button">Change Password</a>
+                                        <div class="playlist" id="p3">
+                                            <p>Blah Blah 3</p>  
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col">
-                                    <h1>Bio</h1>
-                                    <P id = "bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat
-                                        sed lectus non lobortis. Aenean imperdiet leo nec efficitur iaculis.
-                                        Donec euismod dignissim efficitur. Maecenas dignissim lobortis ultricies.
-                                        Maecenas ultrices elit at rutrum consectetur. Nunc egestas porta ex, non
-                                        molestie felis gravida sed. Nulla egestas dapibus mi sed porta. Ut dapibus
-                                        neque ut eleifend pulvinar. Cras rhoncus lacus nec risus faucibus mattis.
-                                        Donec vitae ex est. Nunc scelerisque eleifend scelerisque. Nullam dignissim
-                                        velit eget tincidunt lobortis.</P>
+                                <div class="row">
+                                    <div class="col">
+
+                                    </div>
+                                    <div class="col">
+
+                                    </div>
+                                    <div class="col">
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="playlist" id="p5">
+
+                                        </div>
+                                        <div class="playlist" id="p6">
+                                            
+                                        </div>
+                                        <div class="playlist" id="p7">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+
+                                    </div>
+                                    <div class="col">
+
+                                    </div>
+                                    <div class="col">
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="playlist" id="p8">
+
+                                        </div>
+                                        <div class="playlist" id="p9">
+                                            
+                                        </div>
+                                        <div class="playlist" id="p10">
+                                            
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -215,6 +217,33 @@
                 $('#sbToggle').toggleClass('fa-arrow-alt-circle-left');
             });
         });
+    </script>
+    <script type="text/javascript">
+        var coll = document.getElementsByClassName("collapsible");
+        var playlistArr = document.getElementsByClassName("playlist");
+        var i;
+        var j;
+        var k;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            //this.classList.toggle("active");
+            for(k = 0; k < coll.length; k ++){
+                if(coll[k] === this){
+                    for(j = 0; j < playlistArr.length; j++){
+                    //window.alert(i + " " + j);
+                        var content = playlistArr[j];
+                        if (content.style.display === "block") {
+                            content.style.display = "none";
+                        } 
+                        else if(k == j) {
+                            content.style.display = "block";
+                        }
+                    }
+                }
+            }
+        });
+        } 
     </script>
 </body>
 
