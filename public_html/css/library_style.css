@@ -1,6 +1,6 @@
  /* Style the button that is used to open and close the collapsible content */
  table {
-    margin-top: 2em;
+    margin-top: .5em;
     color:  #dbedf3;
     font-family: 'Questrial', sans-serif;
  }
@@ -23,8 +23,9 @@
  }
  .playlist {
      padding: 0 18px;
-     display: none;
      overflow: hidden;
+     max-height: 0;
+     transition: max-height 0.2s ease-out;
  }
 
  .playlistImg {
