@@ -1,25 +1,44 @@
  /* Style the button that is used to open and close the collapsible content */
+ table {
+    margin-top: 2em;
+    color:  #dbedf3;
+    font-family: 'Questrial', sans-serif;
+ }
+
+ tr.song:hover{
+    background-color: #404b69;
+    cursor: pointer; 
+ }
  .collapsible {
-    color: #444;
-    width: 100%;
-    padding: 10em;
-    border: none;
-    outline: none;
-    background: url(../img/Imagine\ Dragons\ Cover\ Art.jpg);
-    background-size: cover;
-  }
-  
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-  .active, .collapsible:hover {
-    background-color: #ccc;
-  }
-  
-  /* Style the collapsible content. Note: hidden by default */
-  .playlist {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-  } 
-  .playlistImg{
-      width: 20em;
-  }
+     color: #444;
+     width: 100%;
+     height: 95%;
+     padding: 10em;
+     border: none;
+     outline: none;
+     background-position: left top, right top, left bottom, right bottom;
+     background-repeat: no-repeat;
+     background-size: 50%;
+
+ }
+ .playlist {
+     padding: 0 18px;
+     display: none;
+     overflow: hidden;
+ }
+
+ .playlistImg {
+     width: 20em;
+ }
+
+.delete{
+     display: none;
+     overflow: hidden;
+ }
+.active{
+    display: block;
+    background-color: #283149;
+ }
+tr .active{
+    border: 0;
+}
