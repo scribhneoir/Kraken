@@ -60,7 +60,10 @@ h3{
     background-color: #f73859;
     color: #dbedf3;
 }
-#icon{
+#icon, #profile_pic{
+     width: 6em;
+ }
+#profile_pic{
     width: 6em;
 }
 #logo{

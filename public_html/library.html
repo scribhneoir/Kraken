@@ -27,30 +27,44 @@
 </head>
 
 <body>
-    <header class="shadow">
-        <div class="container">
-            <div class="row">
-                <div class="col-2" id="logoImg">
-                    <img id="icon" src="img/icon.png" alt="icon">
-                </div>
-                <div class="col-5" id="logo">
-                    <div class="row">
-                        <div class="col">
-                            <h1>KRAKEN</h1>
-                            <h2 id="subtitle">social music library</h2>
-                        </div>
+<header class="shadow">
+    <div class="container">
+        <div class="row">
+            <div class="col-2" id="logoImg">
+                <img id="icon" src="img/icon.png" alt="icon">
+            </div>
+            <div class="col-4" id="logo">
+                <div class="row">
+                    <div class="col">
+                        <h1>KRAKEN</h1>
+                        <h2 id="subtitle">social music library</h2>
                     </div>
                 </div>
-                <div class="col-4" id="search">
-                    <form class="form-inline">
-                        <i class="fas fa-search" aria-hidden="true"></i>
-                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
-                            aria-label="Search">
-                    </form>
-                </div>
+            </div>
+            <div class="col-4" id="search">
+                <form class="form-inline">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                           aria-label="Search">
+                    <div class = "dropdown col-1">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">config
+                            <span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-item"><input type="checkbox" checked data-size="mini"> Artists</li>
+                            <li class="dropdown-item"><input type="checkbox" checked data-size="mini"> Albums</li>
+                            <li class="dropdown-item"><input type="checkbox" checked data-size="mini"> Songs</li>
+                            <li class="dropdown-item"><input type="checkbox" checked data-size="mini"> Users</li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class = "offset-1 col-1" id = "profile">
+                <a href="profile.html"><img id="profile_pics" src="img/profile.jpg" alt="profile" style ="
+                    width: 100px;"></a>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
     <main class="wrapper">
         <div class="row">
