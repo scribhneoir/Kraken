@@ -1,3 +1,4 @@
+<?php
 # --------------------------------------------------------------------------------------
 # Define BASE_PATH
 #
@@ -14,7 +15,7 @@ define('CLASS_ROOT', BASE_PATH . 'public_html/class/');
 define('PRIVATE_PATH', BASE_PATH . 'private_html/');
 #
 # Set Smarty constants
-define('SMARTY_ROOT', WEB_PATH . 'lib/Smarty-3.1.15/');
+define('SMARTY_ROOT', WEB_PATH . 'libs/Smarty-3.1.33/');
 define('SMARTY_TEMPLATES', WEB_PATH . 'templates/');
 define('SMARTY', SMARTY_ROOT . 'libs/Smarty.class.php');
 /*
@@ -32,3 +33,4 @@ $smarty -> setTemplateDir(SMARTY_TEMPLATES);
 $smarty -> setCompileDir(SMARTY_ROOT . 'templates_c');
 $smarty -> setCacheDir(SMARTY_ROOT . 'cache');
 $smarty -> setConfigDir(SMARTY_ROOT . 'configs');
+?>

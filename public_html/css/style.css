@@ -1,0 +1,24 @@
+h1, h2, p{
+    color: black;
+}
+.empty{
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+}
+.centered{
+    align-self: center;
+}
+.card{
+    margin-top: 2em;
+    padding: 1em;
+}
+label{
+    margin-left: 1em;
+}
+.row{
+    padding: .5em 0;
+}
+.form-control{
+    margin-left: .2em;
+}

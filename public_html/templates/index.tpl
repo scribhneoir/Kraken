@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Template</title>
+    <title>{$title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
     <!-- Bootstrap CSS CDN -->
@@ -53,14 +53,13 @@
             <div class="row">
                 <div class="col-6">
                     <div class="card" id="login">
-                        <form action="login.php" method="post">
+                        <form method="post">
                             <div id="pro_form" class="col">
                                 <h2 class="profile_title">login</h2>
                                 <div class="form-group row">
-                                    <label for="user_id" class="col-4 col-form-label font-weight-bold">User
-                                        ID</label>
+                                    <label for="email" class="col-4 col-form-label font-weight-bold">E-Mail</label>
                                     <div class="col">
-                                        <input id="user_id" name="user_id" type="text" class="form-control"
+                                        <input id="email" name="email" type="text" class="form-control"
                                             placeholder="" required="required">
                                     </div>
                                 </div>
@@ -73,9 +72,10 @@
                                 </div>
                                 <div class="row">
                                     <div class="col">
-                                        <a class="btn" href="library.html" role="button">Login</a>
-                                        <a class="btn" href="register.html" role="button">Register</a>
-                                        <a class="btn" href="forgot_password.html" role="button">Forgot Password</a>
+                                        <p>{$msg}</p>
+                                        <button class="btn" type="submit">Login</button>
+                                        <a class="btn" href="register" role="button">Register</a>
+                                        <a class="btn" href="forgot_password" role="button">Forgot Password</a>
                                     </div>
                                 </div>
                             </div>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Template</title>
+    <title>{$title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
     <!-- Bootstrap CSS CDN -->
@@ -21,8 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lexend+Exa|Questrial|Righteous&display=swap" rel="stylesheet">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="css/temp_style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../css/temp_style.css">
+    <link rel="stylesheet" href="../css/login.css">
 
 </head>
 
@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-2" id="logoImg">
-                    <img id="icon" src="img/icon.png" alt="icon">
+                    <img id="icon" src="../img/icon.png" alt="icon">
                 </div>
                 <div class="col-5" id="logo">
                     <div class="row">
@@ -50,11 +50,11 @@
             <div class="row">
                 <div class="col">
                     <div class="card">
-                        <form action="process.php" method="post">
+                        <form method="post">
                             <div id="pro_form" class="offset-2 col-md-8">
                                 <h2 class="offset-5 profile_title">register</h2>
                                 <div class="row">
-                                    <img id="profile_image" class="offset-2" src="img/profile.jpg" alt="profile_image">
+                                    <img id="profile_image" class="offset-2" src="../img/profile.jpg" alt="profile_image">
                                     <div class="file-field">
                                         <div class="btn btn-sm" id="profile_image_upload">
                                             <span>Choose new image</span>
@@ -68,6 +68,20 @@
                                     <div class="col-7">
                                         <input id="user_id" name="user_id" type="text" class="form-control"
                                             placeholder="" required="required">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="email" class="offset-2 col-3 col-form-label font-weight-bold">E-Mail</label>
+                                    <div class="col-7">
+                                        <input id="email" name="email" type="text" class="form-control"
+                                               placeholder="" required="required">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="password" class="offset-2 col-3 col-form-label font-weight-bold">Password</label>
+                                    <div class="col-7">
+                                        <input id="password" name="password" type="text" class="form-control"
+                                               placeholder="" required="required">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -95,13 +109,6 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="state"
-                                        class="offset-2 col-3 col-form-label font-weight-bold">State</label>
-                                    <div class="col-7">
-                                        <input id="state" name="state" type="text" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
                                     <label class="offset-2 col-3 col-form-label font-weight-bold" for="age">Age</label>
                                     <div class="col-7">
                                         <input id="age" name="age" type="number" class="form-control " placeholder="">
@@ -111,8 +118,8 @@
                                     <label class="offset-2 col-3 font-weight-bold">Gender</label>
                                     <div class="col-7">
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input name="gender" id="male" type="radio" class="custom-control-input "
-                                                value="male">
+                                            <input name="gender" id="male" type="radio" class="custom-control-input"
+                                                value="male" checked>
                                             <label for="male" class="custom-control-label">Male</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
@@ -132,7 +139,7 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="offset-5 col-8">
-                                        <a class="btn" href="index.html" role="button">Cancel</a>
+                                        <a class="btn" href="index.php" role="button">Cancel</a>
                                         <button name="submit" type="submit" class="btn">Register</button>
                                     </div>
                                 </div>

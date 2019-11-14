@@ -11,8 +11,8 @@
  }
  .collapsible {
      color: #444;
-     width: 100%;
-     height: 95%;
+     width: 25%;
+     height: 25%;
      padding: 10em;
      border: none;
      outline: none;
@@ -42,4 +42,10 @@
  }
 tr .active{
     border: 0;
+}
+
+.deleteSong{
+    padding:0;
+    padding-left: 5px;
+    padding-right: 5px;
 }

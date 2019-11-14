@@ -21,8 +21,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lexend+Exa|Questrial|Righteous&display=swap" rel="stylesheet">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="css/temp_style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="../css/temp_style.css">
+    <link rel="stylesheet" href="../css/login.css">
 
 </head>
 
@@ -31,7 +31,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-2" id="logoImg">
-                    <img id="icon" src="img/icon.png" alt="icon">
+                    <img id="icon" src="../img/icon.png" alt="icon">
                 </div>
                 <div class="col-5" id="logo">
                     <div class="row">
@@ -63,7 +63,7 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="offset-4 col-8">
-                                        <a class="btn" href="index.html" role="button">Cancel</a>
+                                        <a class="btn" href="../" role="button">Cancel</a>
                                         <button name="submit" type="submit" class="btn">Register</button>
                                     </div>
                                 </div>
