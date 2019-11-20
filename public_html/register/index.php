@@ -1,5 +1,12 @@
 <?php
     include '../../private_html/config.php';
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
+
+    require '../libs/phpMailer/src/Exception.php';
+    require '../libs/phpMailer/src/PHPMailer.php';
+    require '../libs/phpMailer/src/SMTP.php';
+
     $servername = "kraken.cs.messiah.edu";
     $dbusername = "csadmin";
     $dbpassword = "s3amonst3r";
@@ -41,7 +48,50 @@ if(isset($_POST['email'])) {
     if (isset($_POST['gender'])) {
         $gender = $_POST['gender'];
     }
+
+    $mail = new PHPMailer(TRUE);
+
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Port = 587;
+    $mail->SMTPAuth = true;
+    $mail->SMTPSecure = 'tls';
+
+    /* Username (email address). */
+    $mail->Username = 'krakensocialmusiclibrary@gmail.com';
+
+    /* Google account password. */
+    $mail->Password = 's3amonst3r';
+
+    /* Open the try/catch block. */
+    try {
+        /* Set the mail sender. */
+        $mail->setFrom('krakensocialmusiclibrary@gmail.com', 'KrackenSML');
+
+        /* Add a recipient. */
+        $mail->addAddress("$email", "$first_name");
+
+        /* Set the subject. */
+        $mail->Subject = 'Password';
+
+        /* Set the mail message body. */
+        $mail->Body = $password;
+
+        /* Finally send the mail. */
+        $mail->send();
+    }
+    catch (Exception $e)
+    {
+        /* PHPMailer exception. */
+        echo $e->errorMessage();
+    }
+    catch (\Exception $e)
+    {
+        /* PHP exception (note the backslash to select the global namespace Exception class). */
+        echo $e->getMessage();
+    }
 /*
+
     $bio = $_POST['textarea'];
     $username = $_POST['user_id'];
     */
@@ -49,16 +99,6 @@ if(isset($_POST['email'])) {
         $sql = "INSERT INTO User (Password,Email,First_Name,Last_Name,Gender) VALUES ('$password','$email','$first_name','$last_name','$gender')";
         $conn->exec($sql);
         header("Location: index.php");
-
-        // the message
-        $msg = "Here is your password\n".$password;
-
-        // use wordwrap() if lines are longer than 70 characters
-        $msg = wordwrap($msg,70);
-
-        // send email
-        mail("$email","Temp Password",$msg);
-
         exit;
     } catch (PDOException $e) {
         echo 'ERROR: ' . $e->getMessage();
