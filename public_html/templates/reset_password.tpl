@@ -50,7 +50,7 @@
             <div class="row">
                 <div class="col">
                     <div class="card">
-                        <form action="index.html" method="post">
+                        <form action="index.php" method="post">
                             <div id="pro_form" class="offset-2 col-md-8">
                                 <h2 class="offset-5 profile_title">Forgot Password?</h2>
                                 <p class="offset-5">Enter the temporary password from the email <br> and then enter your new password </p>

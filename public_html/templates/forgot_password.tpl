@@ -63,7 +63,11 @@
                                 </div>
                                 <div class="form-group row">
                                     <div class="offset-4 col-8">
+<<<<<<< Updated upstream:public_html/templates/forgot_password.tpl
                                         <a class="btn" href="../" role="button">Cancel</a>
+=======
+                                        <a class="btn" href="index.php" role="button">Cancel</a>
+>>>>>>> Stashed changes:public_html/forgot_password.html
                                         <button name="submit" type="submit" class="btn">Register</button>
                                     </div>
                                 </div>
