@@ -2,7 +2,7 @@
 $servername = "kraken.cs.messiah.edu";
 $username = "csadmin";
 $password = "s3amonst3r";
-$dbname = "login";
+$dbname = "kracken_DB";
 $msg = "";
 try {
     $conn = new PDO("mysql:host=$servername; dbname=$dbname", $username, $password);
