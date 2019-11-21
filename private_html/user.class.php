@@ -36,8 +36,8 @@ class User
             }
             try {
                 $sql = "UPDATE User 
-            SET Password = '$this->Password', First_Name = '$this->First_Name', Last_Name = '$this->Last_Name', Gender = '$this->Gender'
-            WHERE Email = '$this->Email'";
+                    SET Password = '$this->Password', First_Name = '$this->First_Name', Last_Name = '$this->Last_Name', Gender = '$this->Gender'
+                    WHERE Email = '$this->Email'";
                 $conn->exec($sql);
             } catch (PDOException $e) {
                 echo 'ERROR: ' . $e->getMessage();
