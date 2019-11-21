@@ -18,6 +18,9 @@ $stmt->bindParam(':password', $_POST['password']);
 $stmt->execute();
 
 if ($stmt->rowCount() > 0) {
+    session_start();
+    $user = new User($_POST['first_name'],$_POST['last_name'],$_POST['email'],$_POST['password'],$_POST['gender']);
+    $_SESSION['user'] = $user.serialize();
     header("Location: library");
     exit;
 }elseif(!empty($_POST['email'])){

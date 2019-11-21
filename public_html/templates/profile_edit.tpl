@@ -126,6 +126,7 @@
                         <form action="process.php" method="post">
                             <div id="pro_form" class="offset-2 col-md-8">
                                 <h1 class="offset-5 profile_title">Edit Profile</h1>
+                                <!--
                                 <div class="row">
                                     <img id="profile_image" class="offset-2" src="img/profile.jpg" alt="profile_image">
                                     <div class="file-field">
@@ -135,6 +136,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="form-group row">
                                     <label for="user_id" class="offset-2 col-3 col-form-label font-weight-bold">User
                                         ID</label>
@@ -143,6 +145,7 @@
                                                placeholder="" required="required">
                                     </div>
                                 </div>
+                                -->
                                 <div class="form-group row">
                                     <label for="first_name" class="offset-2 col-3 col-form-label font-weight-bold">First
                                         Name</label>
@@ -159,6 +162,7 @@
                                                placeholder="">
                                     </div>
                                 </div>
+                                <!--
                                 <div class="form-group row">
                                     <label for="country"
                                            class="offset-2 col-3 col-form-label font-weight-bold">Country</label>
@@ -167,6 +171,7 @@
                                                placeholder="">
                                     </div>
                                 </div>
+
                                 <div class="form-group row">
                                     <label for="state"
                                            class="offset-2 col-3 col-form-label font-weight-bold">State</label>
@@ -180,6 +185,7 @@
                                         <input id="age" name="age" type="number" class="form-control " placeholder="">
                                     </div>
                                 </div>
+                                -->
                                 <div class="form-group row">
                                     <label class="offset-2 col-3 font-weight-bold">Gender</label>
                                     <div class="col-7">
@@ -195,6 +201,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="form-group row">
                                     <label for="textarea"
                                            class="font-weight-bold offset-2 col-3 col-form-label">Bio</label>
@@ -203,6 +210,7 @@
                                                   class="form-control"></textarea>
                                     </div>
                                 </div>
+                                -->
                                 <div class="form-group row">
                                     <div class="offset-5 col-8">
                                         <a class="btn" href="profile.html" role="button">Cancel</a>

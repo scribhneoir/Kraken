@@ -124,6 +124,7 @@
                             <div id="pro_form" class="row">
                                 <div class="col">
                                     <h1 class="profile_title">Profile</h1>
+                                    <!--
                                     <img id="profile_image" src="img/profile.jpg" alt="profile_image">
                                     <div class="row">
                                         <label class="col col-form-label font-weight-bold">User ID</label>
@@ -131,18 +132,20 @@
                                             <p class="font-weight-bold profile_border">JohnSmith</p>
                                         </div>
                                     </div>
+                                    -->
                                     <div class="row">
                                         <label class="col col-form-label font-weight-bold">First Name</label>
                                         <div class="col">
-                                            <p class="font-weight-bold profile_border">John</p>
+                                            <p class="font-weight-bold profile_border">{$first_name}</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <label class="col col-form-label font-weight-bold">Last Name</label>
                                         <div class="col">
-                                            <p class="font-weight-bold profile_border">Smith</p>
+                                            <p class="font-weight-bold profile_border">{$last_name}</p>
                                         </div>
                                     </div>
+                                    <!--
                                     <div class="row">
                                         <label class="col col-form-label font-weight-bold">Country</label>
                                         <div class="col">
@@ -161,10 +164,11 @@
                                             <p class="font-weight-bold profile_border">20</p>
                                         </div>
                                     </div>
+                                    -->
                                     <div class="row">
                                         <label class="col col-form-label font-weight-bold">Gender</label>
                                         <div class="col">
-                                            <p class="font-weight-bold profile_border">Male</p>
+                                            <p class="font-weight-bold profile_border">{$gender}</p>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -175,6 +179,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!--
                                 <div class="col">
                                     <h1>Bio</h1>
                                     <P id = "bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque consequat
@@ -186,6 +191,7 @@
                                         Donec vitae ex est. Nunc scelerisque eleifend scelerisque. Nullam dignissim
                                         velit eget tincidunt lobortis.</P>
                                 </div>
+                                -->
                             </div>
 
                         </div>
