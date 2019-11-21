@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lexend+Exa|Questrial|Righteous&display=swap" rel="stylesheet">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="css/temp_style.css">
+    <link rel="stylesheet" href="../css/temp_style.css">
 
 </head>
 
@@ -30,7 +30,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-2" id="logoImg">
-                    <img id="icon" src="img/icon.png" alt="icon">
+                    <img id="icon" src="../img/icon.png" alt="icon">
                 </div>
                 <div class="col-4" id="logo">
                     <div class="row">
@@ -58,7 +58,7 @@
                     </form>
                 </div>
                 <div class = "offset-1 col-1" id = "profile">
-                    <a href="profile.html"><img id="profile_pics" src="img/profile.jpg" alt="profile" style ="
+                    <a href="profile.html"><img id="profile_pics" src="../img/profile.jpg" alt="profile" style ="
                     width: 100px;"></a>
                 </div>
             </div>
@@ -78,7 +78,7 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-3">
-                                            <img class="feed-icon" src="img/icon.png" alt="icon">
+                                            <img class="feed-icon" src="../img/icon.png" alt="icon">
                                         </div>
                                         <div class="col-9">
                                             <h3>@Scribhneoir favorited a new album!</h3>
@@ -92,7 +92,7 @@
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-3">
-                                            <img class="feed-icon" src="img/icon.png" alt="icon">
+                                            <img class="feed-icon" src="../img/icon.png" alt="icon">
                                         </div>
                                         <div class="col-9">
                                             <h3>@Bandboy sent you a playlist!</h3>

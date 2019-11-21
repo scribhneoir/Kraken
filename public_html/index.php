@@ -1,4 +1,5 @@
 <?php
+include '../private_html/user.class.php';
 $servername = "kraken.cs.messiah.edu";
 $username = "csadmin";
 $password = "s3amonst3r";
@@ -16,12 +17,15 @@ $stmt = $conn->prepare($sql);
 $stmt->bindParam(':email', $_POST['email']);
 $stmt->bindParam(':password', $_POST['password']);
 $stmt->execute();
-
+$result = $stmt->fetchAll();
+$result = $result[0];
+print_r($result);
 if ($stmt->rowCount() > 0) {
     session_start();
-    $user = new User($_POST['first_name'],$_POST['last_name'],$_POST['email'],$_POST['password'],$_POST['gender']);
-    $_SESSION['user'] = $user.serialize();
-    header("Location: library");
+    $user = new User($result['First_Name'],$result['Last_Name'],$result['Email'],$result['Password'],$result['Gender']);
+    $_SESSION['user'] = serialize($user);
+    echo($user->Last_Name);
+    header("Location: profile");
     exit;
 }elseif(!empty($_POST['email'])){
     $msg = 'Wrong username or password';
