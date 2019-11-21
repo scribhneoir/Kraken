@@ -1,6 +1,5 @@
 <?php
 require_once 'config.php';
-include "db.config.php";
 class User
 {
     private $First_Name;
@@ -24,17 +23,28 @@ class User
     public function __set($name, $value) {
         if (property_exists($this, $name)) {
             $this->$name = $value;
-            update();
+            $servername = "kraken.cs.messiah.edu";
+            $dbusername = "csadmin";
+            $dbpassword = "s3amonst3r";
+            $dbname = "kraken_DB";
+
+            try {
+                $conn = new PDO("mysql:host=$servername; dbname=$dbname", $dbusername, $dbpassword);
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            }catch(DPOException $e){
+                echo 'ERROR: ' . $e->getMessage();
+            }
+            try {
+                $sql = "UPDATE User 
+            SET Password = '$this->Password', First_Name = '$this->First_Name', Last_Name = '$this->Last_Name', Gender = '$this->Gender'
+            WHERE Email = '$this->Email'";
+                $conn->exec($sql);
+            } catch (PDOException $e) {
+                echo 'ERROR: ' . $e->getMessage();
+            }
         }
     }
-    private function update(){
-        try {
-            $sql = "UPDATE User 
-            SET Password = '$this->Password', First_Name = '$this->First_Name', Last_Name = '$this->Last_Name', Gender = '$this->Gender'
-            WHERE Email = $this->Email";
-            $conn->exec($sql);
-        } catch (PDOException $e) {
-            echo 'ERROR: ' . $e->getMessage();
-        }
+    public function update(){
+
     }
 }

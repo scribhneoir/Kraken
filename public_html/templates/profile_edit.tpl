@@ -123,7 +123,7 @@
                 <div class="row">
                     <div class="col">
                         <h2>Content</h2>
-                        <form action="process.php" method="post">
+                        <form action="index.php" method="post">
                             <div id="pro_form" class="offset-2 col-md-8">
                                 <h1 class="offset-5 profile_title">Edit Profile</h1>
                                 <!--
@@ -151,7 +151,7 @@
                                         Name</label>
                                     <div class="col-7">
                                         <input id="first_name" name="first_name" type="text" class="form-control"
-                                               placeholder="">
+                                               placeholder="{$first_name}">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -159,7 +159,14 @@
                                         Name</label>
                                     <div class="col-7">
                                         <input id="last_name" name="last_name" type="text" class="form-control"
-                                               placeholder="">
+                                               placeholder="{$last_name}">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="password" class="offset-2 col-3 col-form-label font-weight-bold">Password</label>
+                                    <div class="col-7">
+                                        <input id="password" name="password" type="password" class="form-control"
+                                               placeholder="{$last_name}">
                                     </div>
                                 </div>
                                 <!--

@@ -173,7 +173,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-8">
-                                            <a class="btn" href="profile_edit.html" role="button">Edit
+                                            <a class="btn" href="../profile_edit" role="button">Edit
                                                 Profile</a>
                                             <a class="btn" href="change_password.html" role="button">Change Password</a>
                                         </div>
