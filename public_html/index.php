@@ -2,7 +2,7 @@
 $servername = "kraken.cs.messiah.edu";
 $username = "csadmin";
 $password = "s3amonst3r";
-$dbname = "kracken_DB";
+$dbname = "kraken_DB";
 $msg = "";
 try {
     $conn = new PDO("mysql:host=$servername; dbname=$dbname", $username, $password);
@@ -10,7 +10,7 @@ try {
 }catch(DPOException $e){
     echo 'ERROR: ' . $e->getMessage();
 }
-$sql = "SELECT * FROM user WHERE email = :email AND password = :password";
+$sql = "SELECT * FROM User WHERE email = :email AND password = :password";
 
 $stmt = $conn->prepare($sql);
 $stmt->bindParam(':email', $_POST['email']);
@@ -18,7 +18,7 @@ $stmt->bindParam(':password', $_POST['password']);
 $stmt->execute();
 
 if ($stmt->rowCount() > 0) {
-    header("Location: library.html");
+    header("Location: library");
     exit;
 }elseif(!empty($_POST['email'])){
     $msg = 'Wrong username or password';
