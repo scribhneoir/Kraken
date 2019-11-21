@@ -15,7 +15,7 @@ define('CLASS_ROOT', BASE_PATH . 'public_html/class/');
 define('PRIVATE_PATH', BASE_PATH . 'private_html/');
 #
 # Set Smarty constants
-define('SMARTY_ROOT', WEB_PATH . 'libs/Smarty-3.1.33/');
+define('SMARTY_ROOT', WEB_PATH . 'libs/smarty-3.1.33/');
 define('SMARTY_TEMPLATES', WEB_PATH . 'templates/');
 define('SMARTY', SMARTY_ROOT . 'libs/Smarty.class.php');
 /*
