@@ -66,16 +66,16 @@ if(isset($_POST['email'])) {
     /* Open the try/catch block. */
     try {
         /* Set the mail sender. */
-        $mail->setFrom('krakensocialmusiclibrary@gmail.com', 'KrackenSML');
+        $mail->setFrom('krakensocialmusiclibrary@gmail.com', 'KrakenSML');
 
         /* Add a recipient. */
         $mail->addAddress("$email", "$first_name");
 
         /* Set the subject. */
-        $mail->Subject = 'Password';
+        $mail->Subject = 'Welcome to Kraken!';
 
         /* Set the mail message body. */
-        $mail->Body = $password;
+        $mail->Body = "Thank you for registering with Kraken!\nHere is your temporary password: " . $password;
 
         /* Finally send the mail. */
         $mail->send();
@@ -90,15 +90,11 @@ if(isset($_POST['email'])) {
         /* PHP exception (note the backslash to select the global namespace Exception class). */
         echo $e->getMessage();
     }
-/*
 
-    $bio = $_POST['textarea'];
-    $username = $_POST['user_id'];
-    */
     try {
         $sql = "INSERT INTO User (Password,Email,First_Name,Last_Name,Gender) VALUES ('$password','$email','$first_name','$last_name','$gender')";
         $conn->exec($sql);
-        header("Location: index.php");
+        header("Location: ../index.php");
         exit;
     } catch (PDOException $e) {
         echo 'ERROR: ' . $e->getMessage();
