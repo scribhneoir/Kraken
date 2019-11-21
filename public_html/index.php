@@ -102,7 +102,7 @@ $conn = null;
                                     <div class="col">
                                         <p><?php echo $msg; ?></p>
                                         <button type="submit">Login</button>
-                                        <a class="btn" href="register.php" role="button">Register</a>
+                                        <a class="btn" href="register" role="button">Register</a>
                                         <a class="btn" href="forgot_password.html" role="button">Forgot Password</a>
                                     </div>
                                 </div>
