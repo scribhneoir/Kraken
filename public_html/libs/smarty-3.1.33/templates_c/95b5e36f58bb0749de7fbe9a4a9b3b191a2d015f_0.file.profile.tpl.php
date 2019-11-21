@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-20 22:30:14
+/* Smarty version 3.1.33, created on 2019-11-20 23:30:25
   from 'C:\Apache24\htdocs\Kraken\public_html\templates\profile.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd604c69950d2_84581364',
+  'unifunc' => 'content_5dd612e1544cb4_89657725',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '95b5e36f58bb0749de7fbe9a4a9b3b191a2d015f' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\Kraken\\public_html\\templates\\profile.tpl',
-      1 => 1574306878,
+      1 => 1574310599,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd604c69950d2_84581364 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5dd612e1544cb4_89657725 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -203,7 +203,7 @@ function content_5dd604c69950d2_84581364 (Smarty_Internal_Template $_smarty_tpl)
                                     </div>
                                     <div class="row">
                                         <div class="col-8">
-                                            <a class="btn" href="profile_edit.html" role="button">Edit
+                                            <a class="btn" href="../profile_edit" role="button">Edit
                                                 Profile</a>
                                             <a class="btn" href="change_password.html" role="button">Change Password</a>
                                         </div>

@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lexend+Exa|Questrial|Righteous&display=swap" rel="stylesheet">
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="css/temp_style.css">
+    <link rel="stylesheet" href="../css/temp_style.css">
 
 </head>
 <body>
@@ -28,7 +28,7 @@
     <div class="container">
         <div class="row">
             <div class="col-2" id="logoImg">
-                <img id="icon" src="img/icon.png" alt="icon">
+                <img id="icon" src="../img/icon.png" alt="icon">
             </div>
             <div class="col-4" id="logo">
                 <div class="row">
@@ -56,7 +56,7 @@
                 </form>
             </div>
             <div class = "offset-1 col-1" id = "profile">
-                <a href="profile.html"><img id="profile_pics" src="img/profile.jpg" alt="profile" style ="
+                <a href="profile.html"><img id="profile_pics" src="../img/profile.jpg" alt="profile" style ="
                     width: 100px;"></a>
             </div>
         </div>
@@ -79,7 +79,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="feed-icon" src="img/icon.png" alt="icon">
+                                        <img class="feed-icon" src="../img/icon.png" alt="icon">
                                     </div>
                                     <div class="col-9">
                                         <h3>@Scribhneoir favorited a new album!</h3>
@@ -93,7 +93,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-3">
-                                        <img class="feed-icon" src="img/icon.png" alt="icon">
+                                        <img class="feed-icon" src="../img/icon.png" alt="icon">
                                     </div>
                                     <div class="col-9">
                                         <h3>@Bandboy sent you a playlist!</h3>
@@ -126,32 +126,12 @@
                         <form action="index.php" method="post">
                             <div id="pro_form" class="offset-2 col-md-8">
                                 <h1 class="offset-5 profile_title">Edit Profile</h1>
-                                <!--
-                                <div class="row">
-                                    <img id="profile_image" class="offset-2" src="img/profile.jpg" alt="profile_image">
-                                    <div class="file-field">
-                                        <div class="btn btn-sm" id="profile_image_upload">
-                                            <span>Choose new image</span>
-                                            <input type="file">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label for="user_id" class="offset-2 col-3 col-form-label font-weight-bold">User
-                                        ID</label>
-                                    <div class="col-7">
-                                        <input id="user_id" name="user_id" type="text" class="form-control"
-                                               placeholder="" required="required">
-                                    </div>
-                                </div>
-                                -->
                                 <div class="form-group row">
                                     <label for="first_name" class="offset-2 col-3 col-form-label font-weight-bold">First
                                         Name</label>
                                     <div class="col-7">
                                         <input id="first_name" name="first_name" type="text" class="form-control"
-                                               placeholder="{$first_name}">
+                                               value="{$first_name}">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -159,69 +139,36 @@
                                         Name</label>
                                     <div class="col-7">
                                         <input id="last_name" name="last_name" type="text" class="form-control"
-                                               placeholder="{$last_name}">
+                                               value="{$last_name}">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="password" class="offset-2 col-3 col-form-label font-weight-bold">Password</label>
                                     <div class="col-7">
                                         <input id="password" name="password" type="password" class="form-control"
-                                               placeholder="{$last_name}">
+                                               value="{$password}">
                                     </div>
                                 </div>
-                                <!--
-                                <div class="form-group row">
-                                    <label for="country"
-                                           class="offset-2 col-3 col-form-label font-weight-bold">Country</label>
-                                    <div class="col-7">
-                                        <input id="country" name="country" type="text" class="form-control"
-                                               placeholder="">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label for="state"
-                                           class="offset-2 col-3 col-form-label font-weight-bold">State</label>
-                                    <div class="col-7">
-                                        <input id="state" name="state" type="text" class="form-control" placeholder="">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <label class="offset-2 col-3 col-form-label font-weight-bold" for="age">Age</label>
-                                    <div class="col-7">
-                                        <input id="age" name="age" type="number" class="form-control " placeholder="">
-                                    </div>
-                                </div>
-                                -->
                                 <div class="form-group row">
                                     <label class="offset-2 col-3 font-weight-bold">Gender</label>
                                     <div class="col-7">
                                         <div class="custom-control custom-radio custom-control-inline">
                                             <input name="gender" id="male" type="radio" class="custom-control-input "
-                                                   value="male">
+                                                   value="male"{if $gender == "male"}checked = "true"{/if}>
                                             <label for="male" class="custom-control-label">Male</label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
                                             <input name="gender" id="female" type="radio" class="custom-control-input"
-                                                   value="female">
+                                                   value="female" {if $gender == "female"}checked = "true"{/if}>
                                             <label for="female" class="custom-control-label">Female</label>
                                         </div>
                                     </div>
                                 </div>
-                                <!--
-                                <div class="form-group row">
-                                    <label for="textarea"
-                                           class="font-weight-bold offset-2 col-3 col-form-label">Bio</label>
-                                    <div class="col-7">
-                                        <textarea id="textarea" name="textarea" cols="40" rows="5"
-                                                  class="form-control"></textarea>
-                                    </div>
-                                </div>
-                                -->
                                 <div class="form-group row">
                                     <div class="offset-5 col-8">
                                         <a class="btn" href="profile.html" role="button">Cancel</a>
                                         <button name="submit" type="submit" class="btn">Submit</button>
+                                        <a class="btn" href="deleteUser.php" role="button">Delete Account</a>
                                     </div>
                                 </div>
                             </div>

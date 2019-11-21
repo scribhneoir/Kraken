@@ -15,6 +15,7 @@ $title = "Kracken - Profile";
 $smarty->assign('first_name', $first_name);
 $smarty->assign('last_name', $last_name);
 $smarty->assign('gender', $gender);
+$smarty->assign('password', $password);
 $smarty->assign('title', $title);
 $smarty->assign('AdditionalCSS', $AdditionalCSS);
 
