@@ -15,7 +15,7 @@
                     Name</label>
                 <div class="col-7">
                     <input id="first_name" name="first_name" type="text" class="form-control"
-                        placeholder="">
+                        placeholder="" required="required">
                 </div>
             </div>
             <div class="form-group row">
@@ -23,7 +23,7 @@
                     Name</label>
                 <div class="col-7">
                     <input id="last_name" name="last_name" type="text" class="form-control"
-                        placeholder="">
+                        placeholder="" required="required">
                 </div>
             </div>
             <div class="form-group row">

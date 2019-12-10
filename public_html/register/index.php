@@ -69,13 +69,28 @@
             echo $e->getMessage();
         }
 
+
         try {
-            $sql = "INSERT INTO User (Password,Email,First_Name,Last_Name,Gender) VALUES ('$password','$email','$first_name','$last_name','$gender')";
-            $conn->exec($sql);
-            header("Location: ../index.php");
-            exit;
+            $sql = "SELECT Email FROM User WHERE email = :email";
+            $stmt = $conn->prepare($sql);
+            $stmt->bindParam(':email', $_POST['email']);
+            $stmt->execute();
         } catch (PDOException $e) {
             echo 'ERROR: ' . $e->getMessage();
+        }
+        if ($stmt->rowCount() == 0) {
+            try {
+                $sql = "INSERT INTO User (Password,Email,First_Name,Last_Name,Gender) VALUES ('$password','$email','$first_name','$last_name','$gender')";
+                $conn->exec($sql);
+                header("Location: ../index.php");
+                exit;
+            } catch (PDOException $e) {
+                echo 'ERROR: ' . $e->getMessage();
+            }
+        }else{
+
+            echo "<script type='text/javascript'> window.onload = function(){ alert('There is already an account with that Email. Please use another Email.');}</script>";
+
         }
     }
     $conn = null;
