@@ -43,12 +43,27 @@
     if(isset($_POST['songReview'])) {
         $DReview = $_POST['songReview'];
         $userAdd = $first_name . " " . $last_name;
-        try {
-            $sql = "INSERT INTO `reviews` (`review`, `songId`, `user`) VALUES ('$DReview', '$songId', '$userAdd')";
-            // use exec() because no results are returned
-            $conn->exec($sql);
-        } catch (PDOException $e) {
-            echo $sql . "<br>" . $e->getMessage();
+
+        $sql = "SELECT user FROM `reviews` WHERE user = '$userAdd'";
+        $stmt = $conn->prepare($sql);
+        $stmt->execute();
+        $already = $stmt->fetchAll();
+        if (isset($already)) {
+            try {
+                $sql = "UPDATE `reviews`  SET `review`= '$DReview' WHERE user = '$userAdd'";
+                // use exec() because no results are returned
+                $conn->exec($sql);
+            } catch (PDOException $e) {
+                echo $sql . "<br>" . $e->getMessage();
+            }
+        } else {
+            try {
+                $sql = "INSERT INTO `reviews` (`review`, `songId`, `user`) VALUES ('$DReview', '$songId', '$userAdd')";
+                // use exec() because no results are returned
+                $conn->exec($sql);
+            } catch (PDOException $e) {
+                echo $sql . "<br>" . $e->getMessage();
+            }
         }
     }
 
