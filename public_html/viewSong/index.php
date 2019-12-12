@@ -24,7 +24,7 @@
         $DReview = $_POST['songReview'];
         $userAdd = $first_name . " " . $last_name;
 
-        $sql = "SELECT user FROM `reviews` WHERE user = '$userAdd'";
+        $sql = "SELECT user FROM `reviews` WHERE user = '$userAdd' AND songId = '$songId'";
         $stmt = $conn->prepare($sql);
         $stmt->execute();
         $already = $stmt->fetchAll();
