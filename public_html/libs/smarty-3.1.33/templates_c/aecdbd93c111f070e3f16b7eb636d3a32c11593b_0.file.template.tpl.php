@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-13 12:35:58
+/* Smarty version 3.1.33, created on 2019-12-11 23:45:13
   from 'C:\Apache24\htdocs\Kraken\public_html\templates\template.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dcc3efe1b25b3_02152588',
+  'unifunc' => 'content_5df1c5d97d3ce9_08286785',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aecdbd93c111f070e3f16b7eb636d3a32c11593b' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\Kraken\\public_html\\templates\\template.tpl',
-      1 => 1573666555,
+      1 => 1576125906,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dcc3efe1b25b3_02152588 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df1c5d97d3ce9_08286785 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -67,7 +67,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                 <div class="col-2" id="logoImg">
                     <img id="icon" src="../img/icon.png" alt="icon">
                 </div>
-                <div class="col-5" id="logo">
+                <div class="col-4" id="logo">
                     <div class="row">
                         <div class="col">
                             <h1>KRAKEN</h1>
@@ -76,11 +76,18 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                     </div>
                 </div>
                 <div class="col-4" id="search">
-                    <form class="form-inline">
+                    <form class="form-inline" action="../songList" method="get">
                         <i class="fas fa-search" aria-hidden="true"></i>
-                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" id="searchField" name="search"
                             aria-label="Search">
+                        <div class = "col-1">
+                            <button name="submit" type="submit" class="btn">Search</button>
+                        </div>
                     </form>
+                </div>
+                <div class = "offset-1 col-1" id = "profile">
+                    <a href="profile.html"><img id="profile_pics" src="../img/profile.jpg" alt="profile" style ="
+                    width: 100px;"></a>
                 </div>
             </div>
         </div>
@@ -143,7 +150,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
             <div class="col-9" id="content">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19200025645dcc3efe1b14a8_39745852', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13922250805df1c5d97d1db2_76606862', "content");
 ?>
 
             </div>
@@ -190,8 +197,7 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19200025645dcc3efe
 
             //go to song
             $(".song").click(function () {
-                alert($(this).attr("id"));
-                window.location = "viewSong.php";
+                window.location.href = "../viewSong/?songId=".concat($(this).attr("id"));
             });
 
             $(".collapsible").click(function () {
@@ -230,12 +236,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_19200025645dcc3efe
 
 </html><?php }
 /* {block "content"} */
-class Block_19200025645dcc3efe1b14a8_39745852 extends Smarty_Internal_Block
+class Block_13922250805df1c5d97d1db2_76606862 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_19200025645dcc3efe1b14a8_39745852',
+    0 => 'Block_13922250805df1c5d97d1db2_76606862',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

@@ -35,7 +35,7 @@
                 <div class="col-2" id="logoImg">
                     <img id="icon" src="../img/icon.png" alt="icon">
                 </div>
-                <div class="col-5" id="logo">
+                <div class="col-4" id="logo">
                     <div class="row">
                         <div class="col">
                             <h1>KRAKEN</h1>
@@ -44,11 +44,18 @@
                     </div>
                 </div>
                 <div class="col-4" id="search">
-                    <form class="form-inline">
+                    <form class="form-inline" action="../songList" method="get">
                         <i class="fas fa-search" aria-hidden="true"></i>
-                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
+                        <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" id="searchField" name="search"
                             aria-label="Search">
+                        <div class = "col-1">
+                            <button name="submit" type="submit" class="btn">Search</button>
+                        </div>
                     </form>
+                </div>
+                <div class = "offset-1 col-1" id = "profile">
+                    <a href="profile.html"><img id="profile_pics" src="../img/profile.jpg" alt="profile" style ="
+                    width: 100px;"></a>
                 </div>
             </div>
         </div>
@@ -148,8 +155,7 @@
 
             //go to song
             $(".song").click(function () {
-                alert($(this).attr("id"));
-                window.location = "viewSong.php";
+                window.location.href = "../viewSong/?songId=".concat($(this).attr("id"));
             });
 
             $(".collapsible").click(function () {

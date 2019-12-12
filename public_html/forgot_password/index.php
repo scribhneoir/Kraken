@@ -35,37 +35,24 @@
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'tls';
 
-        /* Username (email address). */
         $mail->Username = 'krakensocialmusiclibrary@gmail.com';
-
-        /* Google account password. */
         $mail->Password = 's3amonst3r';
 
-        /* Open the try/catch block. */
         try {
-            /* Set the mail sender. */
             $mail->setFrom('krakensocialmusiclibrary@gmail.com', 'KrakenSML');
-
-            /* Add a recipient. */
             $mail->addAddress("$email", "$first_name");
-
-            /* Set the subject. */
             $mail->Subject = 'Forgot Password';
-
-            /* Set the mail message body. */
-            $mail->Body = "We heard you forgot your password!\nDon't sweat it; here is a temporary one: " . $password;
-
-            /* Finally send the mail. */
+            $mail->IsHTML(true);
+            $mail->AddEmbeddedImage('../img/icon.png', 'icon', 'icon.png');
+            $mail->Body = "<h1>Test 1 of PHPMailer html</h1>
+                <p>This is a test picture: <img src=\"cid:icon\" /></p>";
+            $mail->AltBody="We heard you forgot your password!\nDon't sweat it; here is a temporary one: " . $password;
             $mail->send();
         }
-        catch (Exception $e)
-        {
-            /* PHPMailer exception. */
+        catch (Exception $e){
             echo $e->errorMessage();
         }
-        catch (\Exception $e)
-        {
-            /* PHP exception (note the backslash to select the global namespace Exception class). */
+        catch (\Exception $e){
             echo $e->getMessage();
         }
 

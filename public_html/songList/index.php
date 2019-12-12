@@ -1,5 +1,9 @@
 <?php
     include '../../private_html/config.php';
+    $s = "";
+    if(isset($_GET['search'])){
+        $s = $_GET['search'];
+    }
     $servername = "kraken.cs.messiah.edu";
     $username = "csadmin";
     $password = "s3amonst3r";
@@ -7,20 +11,20 @@
     $conn = new PDO("mysql:host=$servername; dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $sqlCheck = "SELECT title, album, artist FROM `songList`";
-    $check = $conn->query($sqlCheck);
+    $sql = "SELECT title, album, artist,songID FROM `songList` WHERE title LIKE :search";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindValue(':search', $s.'%');
+    $stmt->execute();
     $songs = array();
-    $yeet = $check->fetch();
-    $sqlCount = "SELECT COUNT(title) FROM `songList`";
-    $count = $conn->query($sqlCount);
-    $count = $count->fetch();
-    for ($x = 0; $x <= $count[0]-1; $x++) {
-        $songs[] = $yeet;
-        $yeet = $check->fetch();
+    $yeet = $stmt->fetchAll();
+    if ($stmt->rowCount() > 0) {
+        for ($x = 0; $x < $stmt->rowCount(); $x++) {
+            $songs[] = $yeet[$x];
+        }
     }
 
     $smarty->assign('songs', $songs);
-    $AdditionalCSS = "";
+    $AdditionalCSS = "<link rel=\"stylesheet\" href=\"../css/songLibrary_style.css\">";
     $smarty->assign("AdditionalCSS", $AdditionalCSS);
     $title = "Kracken - Songs";
     $smarty->assign('title', $title);

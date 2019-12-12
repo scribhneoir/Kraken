@@ -1,0 +1,12 @@
+ /* Style the button that is used to open and close the collapsible content */
+ table {
+    margin-top: .5em;
+    color:  #dbedf3;
+    font-family: 'Questrial', sans-serif;
+ }
+
+ tr.song:hover{
+    background-color: #404b69;
+    cursor: pointer; 
+ }
+ 

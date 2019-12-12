@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-20 23:44:26
+/* Smarty version 3.1.33, created on 2019-12-11 22:19:54
   from 'C:\Apache24\htdocs\Kraken\public_html\templates\profile_edit.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd6162a799481_35742483',
+  'unifunc' => 'content_5df1b1dad3acf5_99569248',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd43d7ad848e4c6b625d54ae1055c3f98e536116d' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\Kraken\\public_html\\templates\\profile_edit.tpl',
-      1 => 1574311277,
+      1 => 1576117681,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd6162a799481_35742483 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df1b1dad3acf5_99569248 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -157,7 +157,7 @@ function content_5dd6162a799481_35742483 (Smarty_Internal_Template $_smarty_tpl)
                                     <label for="first_name" class="offset-2 col-3 col-form-label font-weight-bold">First
                                         Name</label>
                                     <div class="col-7">
-                                        <input id="first_name" name="first_name" type="text" class="form-control"
+                                        <input id="first_name" name="first_name" type="text" class="form-control" required="required"
                                                value="<?php echo $_smarty_tpl->tpl_vars['first_name']->value;?>
 ">
                                     </div>
@@ -166,7 +166,7 @@ function content_5dd6162a799481_35742483 (Smarty_Internal_Template $_smarty_tpl)
                                     <label for="last_name" class="offset-2 col-3 col-form-label font-weight-bold">Last
                                         Name</label>
                                     <div class="col-7">
-                                        <input id="last_name" name="last_name" type="text" class="form-control"
+                                        <input id="last_name" name="last_name" type="text" class="form-control" required="required"
                                                value="<?php echo $_smarty_tpl->tpl_vars['last_name']->value;?>
 ">
                                     </div>
@@ -174,7 +174,7 @@ function content_5dd6162a799481_35742483 (Smarty_Internal_Template $_smarty_tpl)
                                 <div class="form-group row">
                                     <label for="password" class="offset-2 col-3 col-form-label font-weight-bold">Password</label>
                                     <div class="col-7">
-                                        <input id="password" name="password" type="password" class="form-control"
+                                        <input id="password" name="password" type="password" class="form-control" required="required"
                                                value="<?php echo $_smarty_tpl->tpl_vars['password']->value;?>
 ">
                                     </div>

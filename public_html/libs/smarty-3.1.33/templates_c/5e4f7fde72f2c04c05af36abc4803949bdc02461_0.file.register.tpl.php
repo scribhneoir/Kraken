@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-11-21 13:48:21
+/* Smarty version 3.1.33, created on 2019-12-11 22:21:47
   from 'C:\Apache24\htdocs\Kraken\public_html\templates\register.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5dd6dbf5687470_67659846',
+  'unifunc' => 'content_5df1b24ba7d050_56808284',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5e4f7fde72f2c04c05af36abc4803949bdc02461' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\Kraken\\public_html\\templates\\register.tpl',
-      1 => 1574362098,
+      1 => 1576117681,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5dd6dbf5687470_67659846 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df1b24ba7d050_56808284 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
  
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13270613475dd6dbf5686c18_49767159', "form");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3165772785df1b24ba79798_47687580', "form");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "home.tpl");
 }
 /* {block "form"} */
-class Block_13270613475dd6dbf5686c18_49767159 extends Smarty_Internal_Block
+class Block_3165772785df1b24ba79798_47687580 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'form' => 
   array (
-    0 => 'Block_13270613475dd6dbf5686c18_49767159',
+    0 => 'Block_3165772785df1b24ba79798_47687580',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -56,7 +56,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                     Name</label>
                 <div class="col-7">
                     <input id="first_name" name="first_name" type="text" class="form-control"
-                        placeholder="">
+                        placeholder="" required="required">
                 </div>
             </div>
             <div class="form-group row">
@@ -64,7 +64,7 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
                     Name</label>
                 <div class="col-7">
                     <input id="last_name" name="last_name" type="text" class="form-control"
-                        placeholder="">
+                        placeholder="" required="required">
                 </div>
             </div>
             <div class="form-group row">
