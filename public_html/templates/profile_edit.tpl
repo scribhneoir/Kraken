@@ -130,7 +130,7 @@
                                     <label for="first_name" class="offset-2 col-3 col-form-label font-weight-bold">First
                                         Name</label>
                                     <div class="col-7">
-                                        <input id="first_name" name="first_name" type="text" class="form-control"
+                                        <input id="first_name" name="first_name" type="text" class="form-control" required="required"
                                                value="{$first_name}">
                                     </div>
                                 </div>
@@ -138,14 +138,14 @@
                                     <label for="last_name" class="offset-2 col-3 col-form-label font-weight-bold">Last
                                         Name</label>
                                     <div class="col-7">
-                                        <input id="last_name" name="last_name" type="text" class="form-control"
+                                        <input id="last_name" name="last_name" type="text" class="form-control" required="required"
                                                value="{$last_name}">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="password" class="offset-2 col-3 col-form-label font-weight-bold">Password</label>
                                     <div class="col-7">
-                                        <input id="password" name="password" type="password" class="form-control"
+                                        <input id="password" name="password" type="password" class="form-control" required="required"
                                                value="{$password}">
                                     </div>
                                 </div>

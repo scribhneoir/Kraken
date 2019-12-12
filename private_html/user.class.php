@@ -7,13 +7,15 @@ class User
     private $Email;
     private $Password;
     private $Gender;
+    private $Salt;
 
-    public function __construct($fName, $lName, $email, $pw, $gender){
+    public function __construct($fName, $lName, $email, $pw, $gender, $salt){
         $this ->First_Name = $fName;
         $this ->Last_Name = $lName;
         $this ->Email = $email;
         $this ->Password = $pw;
         $this ->Gender = $gender;
+        $this ->Salt = $salt;
     }
     public function __get($name) {
         if (property_exists($this, $name)) {

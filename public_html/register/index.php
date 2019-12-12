@@ -12,10 +12,14 @@
         $n=10;
         $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
         $randomString = '';
-
+        $salt = "";
         for ($i = 0; $i < $n; $i++) {
             $index = rand(0, strlen($characters) - 1);
             $randomString .= $characters[$index];
+        }
+        for ($i = 0; $i < $n; $i++) {
+            $index = rand(0, strlen($characters) - 1);
+            $salt .= $characters[$index];
         }
 
         $password = $randomString;
@@ -78,9 +82,11 @@
         } catch (PDOException $e) {
             echo 'ERROR: ' . $e->getMessage();
         }
+
+        $password = md5($password . $salt);
         if ($stmt->rowCount() == 0) {
             try {
-                $sql = "INSERT INTO User (Password,Email,First_Name,Last_Name,Gender) VALUES ('$password','$email','$first_name','$last_name','$gender')";
+                $sql = "INSERT INTO User (Password,Salt,Email,First_Name,Last_Name,Gender) VALUES ('$password','$salt','$email','$first_name','$last_name','$gender')";
                 $conn->exec($sql);
                 header("Location: ../index.php");
                 exit;
