@@ -27,16 +27,13 @@
     $email = $user->Email;
     $first_name = $user->First_Name;
     $last_name = $user->Last_Name;
+
     $servername = "kraken.cs.messiah.edu";
     $username = "csadmin";
     $password = "s3amonst3r";
     $dbname = "songs";
     $conn = new PDO("mysql:host=$servername; dbname=$dbname", $username, $password);
-    // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    $DReview = "yes";
-    $userAdd = "Gage Sapp";
 
     $songId = "1000000000";
     if(isset($_GET['songId'])){
@@ -44,6 +41,8 @@
     }
 
     if(isset($_POST['songReview'])) {
+        $DReview = $_POST['songReview'];
+        $userAdd = $first_name . " " . $last_name;
         try {
             $sql = "INSERT INTO `reviews` (`review`, `songId`, `user`) VALUES ('$DReview', '$songId', '$userAdd')";
             // use exec() because no results are returned
@@ -59,6 +58,11 @@
     $songInfo = $stmt->fetchAll();
     $songInfo = $songInfo[0];
 
+    $sql = "SELECT review, user FROM `reviews` WHERE songId = '$songId'";
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $songReviews = $stmt->fetchAll();
+
     $AdditionalCSS = "";
     $smarty->assign("AdditionalCSS", $AdditionalCSS);
     $title = "Kracken - Songs";
@@ -70,5 +74,6 @@
     $smarty->assign("songArtist", $songInfo[5]);
     $smarty->assign("songDescription", $songInfo[6]);
     $smarty->assign("songAdded", $songInfo[7]);
+    $smarty->assign("songReviews", $songReviews);
     $smarty->display("viewSong.tpl");
 ?>

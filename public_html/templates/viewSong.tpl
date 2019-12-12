@@ -6,43 +6,31 @@
             <img src="img\Imagine Dragons Cover Art.jpg" style="width:100%">
             <div class="card">
                 <div class="card-body">
-                    <h3 style="text-align:center">Thunder</h3>
+                    <h3 style="text-align:center">{$songTitle}</h3>
                     <ul>
-                        <li>Song Length: 3:08</li>
-                        <li>Artist: Imagine Dragons</li>
-                        <li>Album: Evolve</li>
-                        <li>Genre: Synth-Pop</li>
-                        <li>Description: Upbeat song, the bass really slaps.</li>
-                        <li>Added By: LazyTiger22</li>
-                        <li>Average Start Rating: 3.9</li>
-                        <a name="submit" href="viewAlbum.php" type="submit" class="btn" style="margin-top:10px;">Go To Album</a>
+                        <li>Song Length: {$songLength}</li>
+                        <li>Artist: {$songArtist}</li>
+                        <li>Album: {$songAlbum}</li>
+                        <li>Genre: {$songGenre}</li>
+                        <li>Description: {$songDescription}</li>
+                        <li>Added By: {$songAdded}</li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="form col">
+        <form method='post' action="index.php">
             <label for="songReview" class="col-form-label " style="color: #dbedf3;">Write a Review!</label>
             <textarea id="songReview" name="songReview" cols="40" rows="5" class="form-control"></textarea>
             <button name="submit" type="submit" class="btn">Submit Your Review</button>
+        </form>
             <div class="card" style="margin-top:10px;">
                 <div class="card-body">
                     <h3 style="text-align:center">Other Users Wrote:</h3>
-                    <p>Madrake35: I love this song so Much!</p>
-                    <p>Puppy_Eyes314: This song is kinda ok.</p>
+                    {for $i=0 to count($songReviews) - 1} 
+                        <p>{$songReviews[$i][1]}: {$songReviews[$i][0]}</p>
+                    {/for}
                 </div>
-            </div>
-            <h3 style="margin-top: 10px;">How many stars do you give this song?</h3>
-            <div class="rate">
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text"style="color: #dbedf3;">1 star</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text"style="color: #dbedf3;">2 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text"style="color: #dbedf3;">3 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text"style="color: #dbedf3;">4 stars</label>
-                <input type="radio" id="star5" name="rate" value="5" />
-                <label for="star5" title="text"style="color: #dbedf3;">5 stars</label>
             </div>
             <div class = "dropdown col-1"style="margin-top:20px;">
                 <button class="btn dropdown-toggle" type="button" data-toggle="dropdown">Add To Playlist
