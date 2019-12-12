@@ -39,14 +39,19 @@
         $mail->Password = 's3amonst3r';
 
         try {
+            /* Set the mail sender. */
             $mail->setFrom('krakensocialmusiclibrary@gmail.com', 'KrakenSML');
+
+            /* Add a recipient. */
             $mail->addAddress("$email", "$first_name");
-            $mail->Subject = 'Forgot Password';
-            $mail->IsHTML(true);
-            $mail->AddEmbeddedImage('../img/icon.png', 'icon', 'icon.png');
-            $mail->Body = "<h1>Test 1 of PHPMailer html</h1>
-                <p>This is a test picture: <img src=\"cid:icon\" /></p>";
-            $mail->AltBody="We heard you forgot your password!\nDon't sweat it; here is a temporary one: " . $password;
+
+            /* Set the subject. */
+            $mail->Subject = 'Welcome to Kraken!';
+
+            /* Set the mail message body. */
+            $mail->Body = "We heard you forgot your password!\nDon't worry, here is a temporary one: " . $password;
+
+            /* Finally send the mail. */
             $mail->send();
         }
         catch (Exception $e){
