@@ -3,7 +3,6 @@
     <h1 style="text-align:center">View Song</h1>
     <div class="row">
         <div class="col">
-            <img src="img\Imagine Dragons Cover Art.jpg" style="width:100%">
             <div class="card">
                 <div class="card-body">
                     <h3 style="text-align:center">{$songTitle}</h3>
@@ -19,7 +18,7 @@
             </div>
         </div>
         <div class="form col">
-        <form method='post' action="index.php">
+        <form method='post' action="../viewSong/?songId={$songId}">
             <label for="songReview" class="col-form-label " style="color: #dbedf3;">Write a Review!</label>
             <textarea id="songReview" name="songReview" cols="40" rows="5" class="form-control"></textarea>
             <button name="submit" type="submit" class="btn">Submit Your Review</button>

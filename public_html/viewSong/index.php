@@ -1,24 +1,4 @@
 <?php
-//    $songfk = "1000000000";
-//    $servername = "kraken.cs.messiah.edu";
-//    $username = "csadmin";
-//    $password = "s3amonst3r";
-//    $dbname = "songs";
-//    //
-//    $conn = new PDO("mysql:host=$servername; dbname=$dbname", $username, $password);
-//    // set the PDO error mode to exception
-//    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//    $sql = "SELECT review, user FROM `reviews` WHERE $songfk = songId";
-//
-//    $row = $conn-> query($sql);
-//    $review = $row->fetch();
-//    $sqlCount = "SELECT COUNT(reviewId) FROM `reviews`";
-//    $count = $conn->query($sqlCount);
-//    $count = $count->fetch();
-//    for ($x = 0; $x <= $count[0]-1; $x++) {
-//        echo '<p style="margin-top:10px; margin-left: 10px;">'.$review[1].': '.'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'.$review[0].'</p>';
-//        $review = $row->fetch();
-
     include "../../private_html/config.php";
     include '../../private_html/user.class.php';
     session_start();
@@ -48,7 +28,7 @@
         $stmt = $conn->prepare($sql);
         $stmt->execute();
         $already = $stmt->fetchAll();
-        if (isset($already)) {
+        if ($already && $DReview != "") {
             try {
                 $sql = "UPDATE `reviews`  SET `review`= '$DReview' WHERE user = '$userAdd'";
                 // use exec() because no results are returned
@@ -56,7 +36,7 @@
             } catch (PDOException $e) {
                 echo $sql . "<br>" . $e->getMessage();
             }
-        } else {
+        } else if($DReview != "") {
             try {
                 $sql = "INSERT INTO `reviews` (`review`, `songId`, `user`) VALUES ('$DReview', '$songId', '$userAdd')";
                 // use exec() because no results are returned
@@ -82,6 +62,7 @@
     $smarty->assign("AdditionalCSS", $AdditionalCSS);
     $title = "Kracken - Songs";
     $smarty->assign('title', $title);
+    $smarty->assign("songId", $songId);
     $smarty->assign("songTitle", $songInfo[1]);
     $smarty->assign("songLength", $songInfo[2]);
     $smarty->assign("songGenre", $songInfo[3]);

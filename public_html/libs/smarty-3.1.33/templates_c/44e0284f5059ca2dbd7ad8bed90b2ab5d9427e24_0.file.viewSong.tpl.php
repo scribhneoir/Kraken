@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-12 00:22:10
+/* Smarty version 3.1.33, created on 2019-12-12 01:27:05
   from 'C:\Apache24\htdocs\Kraken\public_html\templates\viewSong.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df1ce826dad28_60632517',
+  'unifunc' => 'content_5df1ddb9a73482_96020876',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '44e0284f5059ca2dbd7ad8bed90b2ab5d9427e24' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\Kraken\\public_html\\templates\\viewSong.tpl',
-      1 => 1576128126,
+      1 => 1576132021,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df1ce826dad28_60632517 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df1ddb9a73482_96020876 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
  
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18318542325df1ce826d2d64_46408576', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18425912165df1ddb9a6c9a3_32686251', "content");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "template.tpl");
 }
 /* {block "content"} */
-class Block_18318542325df1ce826d2d64_46408576 extends Smarty_Internal_Block
+class Block_18425912165df1ddb9a6c9a3_32686251 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_18318542325df1ce826d2d64_46408576',
+    0 => 'Block_18425912165df1ddb9a6c9a3_32686251',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -67,7 +67,8 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
             </div>
         </div>
         <div class="form col">
-        <form method='post' action="index.php">
+        <form method='post' action="../viewSong/?songId=<?php echo $_smarty_tpl->tpl_vars['songId']->value;?>
+">
             <label for="songReview" class="col-form-label " style="color: #dbedf3;">Write a Review!</label>
             <textarea id="songReview" name="songReview" cols="40" rows="5" class="form-control"></textarea>
             <button name="submit" type="submit" class="btn">Submit Your Review</button>
