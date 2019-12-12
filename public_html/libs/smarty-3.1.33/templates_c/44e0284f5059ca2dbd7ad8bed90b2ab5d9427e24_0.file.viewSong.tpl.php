@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-12 01:27:05
+/* Smarty version 3.1.33, created on 2019-12-12 14:01:41
   from 'C:\Apache24\htdocs\Kraken\public_html\templates\viewSong.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df1ddb9a73482_96020876',
+  'unifunc' => 'content_5df28e952c8a31_32403716',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '44e0284f5059ca2dbd7ad8bed90b2ab5d9427e24' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\Kraken\\public_html\\templates\\viewSong.tpl',
-      1 => 1576132021,
+      1 => 1576174921,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df1ddb9a73482_96020876 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df28e952c8a31_32403716 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
  
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_18425912165df1ddb9a6c9a3_32686251', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3359135235df28e952c23a5_24303800', "content");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "template.tpl");
 }
 /* {block "content"} */
-class Block_18425912165df1ddb9a6c9a3_32686251 extends Smarty_Internal_Block
+class Block_3359135235df28e952c23a5_24303800 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_18425912165df1ddb9a6c9a3_32686251',
+    0 => 'Block_3359135235df28e952c23a5_24303800',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -44,7 +44,6 @@ public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
     <h1 style="text-align:center">View Song</h1>
     <div class="row">
         <div class="col">
-            <img src="img\Imagine Dragons Cover Art.jpg" style="width:100%">
             <div class="card">
                 <div class="card-body">
                     <h3 style="text-align:center"><?php echo $_smarty_tpl->tpl_vars['songTitle']->value;?>

@@ -60,7 +60,7 @@
 
     $AdditionalCSS = "";
     $smarty->assign("AdditionalCSS", $AdditionalCSS);
-    $title = "Kracken - Songs";
+    $title = "Kracken - ".$songInfo[1];
     $smarty->assign('title', $title);
     $smarty->assign("songId", $songId);
     $smarty->assign("songTitle", $songInfo[1]);

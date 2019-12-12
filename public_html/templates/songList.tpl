@@ -21,6 +21,11 @@
                                     <td>{$songs[$i][2]}</td>
                                 </tr>
                             {/for}
+                            <tr class="song" id="add">
+                                <td></td>
+                                <td style="color: #f73859; font-family: 'Righteous', cursive; font-size: 1.5em;">Add Song</td>
+                                <td></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

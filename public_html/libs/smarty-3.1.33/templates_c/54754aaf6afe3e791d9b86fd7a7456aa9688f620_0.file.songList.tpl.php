@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-11 23:28:52
+/* Smarty version 3.1.33, created on 2019-12-12 14:06:44
   from 'C:\Apache24\htdocs\Kraken\public_html\templates\songList.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df1c2048404e9_38468572',
+  'unifunc' => 'content_5df28fc4ae7430_94688775',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '54754aaf6afe3e791d9b86fd7a7456aa9688f620' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\Kraken\\public_html\\templates\\songList.tpl',
-      1 => 1576124931,
+      1 => 1576177601,
       2 => 'file',
     ),
   ),
@@ -20,22 +20,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df1c2048404e9_38468572 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df28fc4ae7430_94688775 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, true);
 ?>
  
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_6865178815df1c204839387_11114115', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_3623773615df28fc4ae0620_35466859', "content");
 $_smarty_tpl->inheritance->endChild($_smarty_tpl, "template.tpl");
 }
 /* {block "content"} */
-class Block_6865178815df1c204839387_11114115 extends Smarty_Internal_Block
+class Block_3623773615df28fc4ae0620_35466859 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_6865178815df1c204839387_11114115',
+    0 => 'Block_3623773615df28fc4ae0620_35466859',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {
@@ -72,6 +72,11 @@ $_smarty_tpl->tpl_vars['i']->first = $_smarty_tpl->tpl_vars['i']->iteration === 
                             <?php }
 }
 ?>
+                            <tr class="song" id="add">
+                                <td></td>
+                                <td style="color: #f73859; font-family: 'Righteous', cursive; font-size: 1.5em;">Add Song</td>
+                                <td></td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>

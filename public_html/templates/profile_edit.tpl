@@ -3,7 +3,6 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h2>Content</h2>
                 <form action="index.php" method="post">
                     <div id="pro_form" class="offset-2 col-md-8">
                         <h1 class="offset-5 profile_title">Edit Profile</h1>

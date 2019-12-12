@@ -27,6 +27,7 @@
                         <div class="row">
                             <div class="col-8">
                                 <a class="btn" href="../profile_edit" role="button">Edit Profile</a>
+                                <a class="btn" href="../library" role="button">Library</a>
                             </div>
                         </div>
                     </div>

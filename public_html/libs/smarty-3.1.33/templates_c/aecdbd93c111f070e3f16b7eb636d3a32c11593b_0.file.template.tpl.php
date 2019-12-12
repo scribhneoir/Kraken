@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2019-12-11 23:45:13
+/* Smarty version 3.1.33, created on 2019-12-12 14:11:17
   from 'C:\Apache24\htdocs\Kraken\public_html\templates\template.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5df1c5d97d3ce9_08286785',
+  'unifunc' => 'content_5df290d59d9aa0_97302891',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'aecdbd93c111f070e3f16b7eb636d3a32c11593b' => 
     array (
       0 => 'C:\\Apache24\\htdocs\\Kraken\\public_html\\templates\\template.tpl',
-      1 => 1576125906,
+      1 => 1576177873,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5df1c5d97d3ce9_08286785 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5df290d59d9aa0_97302891 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 ?>
@@ -86,7 +86,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
                     </form>
                 </div>
                 <div class = "offset-1 col-1" id = "profile">
-                    <a href="profile.html"><img id="profile_pics" src="../img/profile.jpg" alt="profile" style ="
+                    <a href="../profile"><img id="profile_pics" src="../img/profile.jpg" alt="profile" style ="
                     width: 100px;"></a>
                 </div>
             </div>
@@ -150,7 +150,7 @@ $_smarty_tpl->inheritance->init($_smarty_tpl, false);
 
             <div class="col-9" id="content">
                 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13922250805df1c5d97d1db2_76606862', "content");
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_4973631775df290d59d89e5_18000581', "content");
 ?>
 
             </div>
@@ -197,7 +197,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13922250805df1c5d9
 
             //go to song
             $(".song").click(function () {
-                window.location.href = "../viewSong/?songId=".concat($(this).attr("id"));
+                if($(this).attr("id") == "add"){
+                     window.location.href = "../addSongToDatabase"
+                }
+                else{
+                    window.location.href = "../viewSong/?songId=".concat($(this).attr("id"));
+                }
             });
 
             $(".collapsible").click(function () {
@@ -236,12 +241,12 @@ $_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_13922250805df1c5d9
 
 </html><?php }
 /* {block "content"} */
-class Block_13922250805df1c5d97d1db2_76606862 extends Smarty_Internal_Block
+class Block_4973631775df290d59d89e5_18000581 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'content' => 
   array (
-    0 => 'Block_13922250805df1c5d97d1db2_76606862',
+    0 => 'Block_4973631775df290d59d89e5_18000581',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

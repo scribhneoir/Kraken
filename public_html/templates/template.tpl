@@ -54,7 +54,7 @@
                     </form>
                 </div>
                 <div class = "offset-1 col-1" id = "profile">
-                    <a href="profile.html"><img id="profile_pics" src="../img/profile.jpg" alt="profile" style ="
+                    <a href="../profile"><img id="profile_pics" src="../img/profile.jpg" alt="profile" style ="
                     width: 100px;"></a>
                 </div>
             </div>
@@ -155,7 +155,12 @@
 
             //go to song
             $(".song").click(function () {
-                window.location.href = "../viewSong/?songId=".concat($(this).attr("id"));
+                if($(this).attr("id") == "add"){
+                     window.location.href = "../addSongToDatabase"
+                }
+                else{
+                    window.location.href = "../viewSong/?songId=".concat($(this).attr("id"));
+                }
             });
 
             $(".collapsible").click(function () {
